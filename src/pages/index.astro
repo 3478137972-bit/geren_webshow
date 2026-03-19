@@ -1,0 +1,138 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="首页">
+  <!-- Hero Section -->
+  <section class="min-h-[80vh] flex items-center justify-center bg-gradient-to-br from-orange-50 to-white">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h1 class="text-5xl md:text-7xl font-bold text-gray-900 mb-6">
+        乐乐 AI 设计师
+      </h1>
+      <p class="text-xl md:text-2xl text-gray-600 mb-8 max-w-2xl mx-auto">
+        一个用 AI 为设计、产品、运营赋能的 AI 训练师
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="/portfolio" class="bg-orange-500 text-white px-8 py-4 rounded-lg hover:bg-orange-600 transition-colors font-medium text-lg">
+          查看作品
+        </a>
+        <a href="/about" class="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-lg hover:border-orange-500 hover:text-orange-500 transition-colors font-medium text-lg">
+          了解更多
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Works -->
+  <section class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-12">精选作品</h2>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- 捷客达便利店 -->
+        <a href="/portfolio#jiekeda" class="group">
+          <div class="aspect-square bg-orange-100 rounded-xl overflow-hidden mb-4">
+            <img 
+              src="/images/brands/jiekeda/1.jpg" 
+              alt="捷客达便利店"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <h3 class="text-lg font-semibold text-gray-900 group-hover:text-orange-500 transition-colors">捷客达便利店</h3>
+          <p class="text-gray-500 text-sm">品牌全案</p>
+        </a>
+
+        <!-- 低卡特工 -->
+        <a href="/portfolio#dikategong" class="group">
+          <div class="aspect-square bg-green-100 rounded-xl overflow-hidden mb-4">
+            <img 
+              src="/images/brands/dikategong/1.jpg" 
+              alt="低卡特工"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <h3 class="text-lg font-semibold text-gray-900 group-hover:text-orange-500 transition-colors">低卡特工</h3>
+          <p class="text-gray-500 text-sm">品牌全案</p>
+        </a>
+
+        <!-- 一豌面 -->
+        <a href="/portfolio#yiwannmian" class="group">
+          <div class="aspect-square bg-yellow-100 rounded-xl overflow-hidden mb-4">
+            <img 
+              src="/images/brands/yiwannmian/1.jpg" 
+              alt="一豌面"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <h3 class="text-lg font-semibold text-gray-900 group-hover:text-orange-500 transition-colors">一豌面</h3>
+          <p class="text-gray-500 text-sm">品牌全案</p>
+        </a>
+
+        <!-- 禾本轻甜 -->
+        <a href="/portfolio#hebenqingtian" class="group">
+          <div class="aspect-square bg-teal-100 rounded-xl overflow-hidden mb-4">
+            <img 
+              src="/images/brands/hebenqingtian/1.jpg" 
+              alt="禾本轻甜"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <h3 class="text-lg font-semibold text-gray-900 group-hover:text-orange-500 transition-colors">禾本轻甜</h3>
+          <p class="text-gray-500 text-sm">品牌全案</p>
+        </a>
+      </div>
+
+      <div class="text-center mt-12">
+        <a href="/portfolio" class="inline-block border-2 border-orange-500 text-orange-500 px-8 py-3 rounded-lg hover:bg-orange-500 hover:text-white transition-colors font-medium">
+          查看全部作品
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Preview -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-8">关于我</h2>
+      <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+        AI 设计 SaaS 工具开发者，"秒懂 AI 超级员工"主理人。<br>
+        AI 商业设计实战导师，专注不懂代码人群的 AI 商业落地。<br>
+        极致降本极客，用 700 元二手电脑敲出商业级 AI 软件。
+      </p>
+      
+      <div class="grid md:grid-cols-3 gap-6 mt-12">
+        <div class="bg-white p-6 rounded-xl shadow-sm">
+          <div class="text-4xl font-bold text-orange-500 mb-2">1.5 年</div>
+          <div class="text-gray-600">设计经验</div>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-sm">
+          <div class="text-4xl font-bold text-orange-500 mb-2">4+</div>
+          <div class="text-gray-600">品牌全案</div>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-sm">
+          <div class="text-4xl font-bold text-orange-500 mb-2">100%</div>
+          <div class="text-gray-600">AI 赋能</div>
+        </div>
+      </div>
+
+      <div class="mt-12">
+        <a href="/about" class="inline-block bg-orange-500 text-white px-8 py-3 rounded-lg hover:bg-orange-600 transition-colors font-medium">
+          了解更多
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-20 bg-orange-500 text-white">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-6">有项目想合作？</h2>
+      <p class="text-xl mb-8 opacity-90">
+        无论是品牌设计还是 AI 培训，我都可以帮你
+      </p>
+      <a href="/contact" class="inline-block bg-white text-orange-500 px-8 py-4 rounded-lg hover:bg-gray-100 transition-colors font-medium text-lg">
+        立即联系
+      </a>
+    </div>
+  </section>
+</BaseLayout>

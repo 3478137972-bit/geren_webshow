@@ -1,0 +1,84 @@
+---
+interface Props {
+  title: string;
+  lang?: string;
+}
+
+const { title, lang = 'zh-CN' } = Astro.props;
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="乐乐 AI 设计师 - 一个用 AI 为设计、产品、运营赋能的 AI 训练师" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <title>{title} | 乐乐 AI 设计师</title>
+  </head>
+  <body class="bg-white text-gray-900 font-sans">
+    <header class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50">
+      <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+        <a href="/" class="text-xl font-bold text-gray-900 hover:text-orange-500 transition-colors">
+          乐乐 AI 设计师
+        </a>
+        
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="/" class="text-gray-600 hover:text-orange-500 transition-colors">首页</a>
+          <a href="/about" class="text-gray-600 hover:text-orange-500 transition-colors">关于</a>
+          <a href="/portfolio" class="text-gray-600 hover:text-orange-500 transition-colors">作品集</a>
+          <a href="/course" class="text-gray-600 hover:text-orange-500 transition-colors">课程</a>
+          <a href="/contact" class="text-gray-600 hover:text-orange-500 transition-colors">联系</a>
+        </div>
+
+        <div class="flex items-center space-x-4">
+          <a href="/contact" class="bg-orange-500 text-white px-5 py-2 rounded-lg hover:bg-orange-600 transition-colors font-medium">
+            联系我
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="pt-20">
+      <slot />
+    </main>
+
+    <footer class="bg-gray-900 text-white py-12 mt-20">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="grid md:grid-cols-3 gap-8">
+          <div>
+            <h3 class="text-lg font-bold mb-4">乐乐 AI 设计师</h3>
+            <p class="text-gray-400 text-sm">
+              一个用 AI 为设计、产品、运营赋能的 AI 训练师
+            </p>
+          </div>
+          
+          <div>
+            <h3 class="text-lg font-bold mb-4">快速链接</h3>
+            <ul class="space-y-2 text-gray-400 text-sm">
+              <li><a href="/" class="hover:text-orange-500 transition-colors">首页</a></li>
+              <li><a href="/about" class="hover:text-orange-500 transition-colors">关于</a></li>
+              <li><a href="/portfolio" class="hover:text-orange-500 transition-colors">作品集</a></li>
+              <li><a href="/course" class="hover:text-orange-500 transition-colors">课程</a></li>
+              <li><a href="/contact" class="hover:text-orange-500 transition-colors">联系</a></li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 class="text-lg font-bold mb-4">联系方式</h3>
+            <ul class="space-y-2 text-gray-400 text-sm">
+              <li>邮箱：3478137972@qq.com</li>
+              <li>微信：m347820705</li>
+              <li>公众号：乐乐 AI 训练师</li>
+              <li>小红书：乐乐 AI 训练师</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500 text-sm">
+          <p>&copy; 2026 乐乐 AI 设计师。All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
