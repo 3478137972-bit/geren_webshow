@@ -1,16 +1,20 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import '../styles/global.css';
 ---
 
 <BaseLayout title="联系">
-  <section class="py-20 bg-white">
-    <div class="max-w-4xl mx-auto px-6">
-      <h1 class="text-5xl font-bold text-center mb-4">联系我</h1>
-      <p class="text-center text-gray-500 mb-12 text-xl">有项目想合作？随时欢迎联系</p>
+  <section class="py-20 bg-gradient-to-br from-orange-50 to-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <!-- Header -->
+      <div class="text-center mb-16">
+        <h1 class="text-5xl font-bold text-gray-900 mb-4">联系我</h1>
+        <p class="text-gray-500 text-lg">有项目想合作？随时欢迎联系</p>
+      </div>
       
-      <div class="grid md:grid-cols-2 gap-12">
+      <div class="grid lg:grid-cols-2 gap-12">
         <!-- Contact Form -->
-        <div>
+        <div class="bg-white rounded-2xl shadow-xl p-8">
           <h2 class="text-2xl font-bold text-gray-900 mb-6">给我留言</h2>
           <form class="space-y-6">
             <div>
@@ -59,56 +63,60 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         </div>
 
         <!-- Contact Info -->
-        <div>
-          <h2 class="text-2xl font-bold text-gray-900 mb-6">其他方式</h2>
-          
-          <div class="space-y-6">
-            <div class="bg-gray-50 p-6 rounded-xl">
-              <div class="flex items-center gap-4">
-                <div class="text-3xl">📧</div>
-                <div>
-                  <div class="text-sm text-gray-500">邮箱</div>
-                  <div class="text-lg font-medium">3478137972@qq.com</div>
-                </div>
-              </div>
+        <div class="space-y-6">
+          <!-- Email -->
+          <div class="bg-white rounded-2xl shadow-lg p-6 flex items-center gap-6">
+            <div class="w-16 h-16 bg-orange-100 rounded-xl flex items-center justify-center text-3xl flex-shrink-0">
+              📧
             </div>
-
-            <div class="bg-gray-50 p-6 rounded-xl">
-              <div class="flex items-center gap-4">
-                <div class="text-3xl">💬</div>
-                <div>
-                  <div class="text-sm text-gray-500">微信</div>
-                  <div class="text-lg font-medium">m347820705</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="bg-gray-50 p-6 rounded-xl">
-              <div class="flex items-center gap-4">
-                <div class="text-3xl">📱</div>
-                <div>
-                  <div class="text-sm text-gray-500">公众号</div>
-                  <div class="text-lg font-medium">乐乐 AI 训练师</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="bg-gray-50 p-6 rounded-xl">
-              <div class="flex items-center gap-4">
-                <div class="text-3xl">📕</div>
-                <div>
-                  <div class="text-sm text-gray-500">小红书</div>
-                  <div class="text-lg font-medium">乐乐 AI 训练师</div>
-                </div>
-              </div>
+            <div>
+              <div class="text-sm text-gray-500 mb-1">邮箱</div>
+              <div class="text-lg font-medium text-gray-900">3478137972@qq.com</div>
             </div>
           </div>
 
-          <!-- QR Code -->
-          <div class="mt-8 bg-orange-50 p-6 rounded-xl text-center">
-            <h3 class="font-semibold text-gray-900 mb-4">扫码加微信</h3>
-            <img src="/images/qrcode/wechat.jpg" alt="微信二维码" class="w-48 h-48 mx-auto bg-white rounded-lg" />
-            <p class="text-sm text-gray-500 mt-4">扫一扫上面的二维码图案，加我为朋友</p>
+          <!-- WeChat -->
+          <div class="bg-white rounded-2xl shadow-lg p-6 flex items-center gap-6">
+            <div class="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center text-3xl flex-shrink-0">
+              💬
+            </div>
+            <div>
+              <div class="text-sm text-gray-500 mb-1">微信</div>
+              <div class="text-lg font-medium text-gray-900">m347820705</div>
+            </div>
+          </div>
+
+          <!-- Official Account -->
+          <div class="bg-white rounded-2xl shadow-lg p-6 flex items-center gap-6">
+            <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center text-3xl flex-shrink-0">
+              📱
+            </div>
+            <div>
+              <div class="text-sm text-gray-500 mb-1">公众号</div>
+              <div class="text-lg font-medium text-gray-900">乐乐 AI 训练师</div>
+            </div>
+          </div>
+
+          <!-- Xiaohongshu -->
+          <div class="bg-white rounded-2xl shadow-lg p-6 flex items-center gap-6">
+            <div class="w-16 h-16 bg-red-100 rounded-xl flex items-center justify-center text-3xl flex-shrink-0">
+              📕
+            </div>
+            <div>
+              <div class="text-sm text-gray-500 mb-1">小红书</div>
+              <div class="text-lg font-medium text-gray-900">乐乐 AI 训练师</div>
+            </div>
+          </div>
+
+          <!-- QR Code Card -->
+          <div class="bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl shadow-xl p-8 text-center">
+            <h3 class="text-xl font-bold text-white mb-4">扫码加微信</h3>
+            <img 
+              src="/images/qrcode/wechat.jpg" 
+              alt="微信二维码" 
+              class="w-48 h-48 mx-auto bg-white rounded-xl shadow-lg mb-4"
+            />
+            <p class="text-white/90 text-sm">扫一扫上面的二维码图案，加我为朋友</p>
           </div>
         </div>
       </div>
