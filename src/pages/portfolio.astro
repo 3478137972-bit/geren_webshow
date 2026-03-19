@@ -4,16 +4,24 @@ import '../styles/global.css';
 ---
 
 <BaseLayout title="作品集">
-  <section class="py-20 bg-white">
+  <!-- Header -->
+  <section class="py-20 bg-gradient-to-br from-orange-50 to-white">
     <div class="max-w-6xl mx-auto px-6">
-      <!-- Header -->
-      <div class="text-center mb-16">
+      <div class="text-center scroll-reveal">
         <h1 class="text-5xl font-bold text-gray-900 mb-4">作品集</h1>
         <p class="text-gray-500 text-lg">1.5 年设计生涯，专注品牌全案设计</p>
+        <div class="mt-8 inline-block bg-orange-500 text-white px-6 py-3 rounded-full font-medium animate-fade-in-up">
+          点击任意图片查看详情 ✨
+        </div>
       </div>
-      
+    </div>
+  </section>
+
+  <!-- Gallery Sections -->
+  <section class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
       <!-- 捷客达便利店 -->
-      <div id="jiekeda" class="mb-24">
+      <div id="jiekeda" class="mb-24 scroll-reveal">
         <div class="flex items-center justify-between mb-8">
           <div>
             <h2 class="text-3xl font-bold text-gray-900">捷客达便利店</h2>
@@ -23,17 +31,17 @@ import '../styles/global.css';
         </div>
         
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <img src="/images/brands/jiekeda/1.jpg" alt="捷客达便利店" class="rounded-xl shadow-md hover:shadow-xl transition-shadow aspect-square object-cover" />
-          <img src="/images/brands/jiekeda/2.jpg" alt="捷客达便利店" class="rounded-xl shadow-md hover:shadow-xl transition-shadow aspect-square object-cover" />
-          <img src="/images/brands/jiekeda/3.jpg" alt="捷客达便利店" class="rounded-xl shadow-md hover:shadow-xl transition-shadow aspect-square object-cover" />
-          <img src="/images/brands/jiekeda/4.jpg" alt="捷客达便利店" class="rounded-xl shadow-md hover:shadow-xl transition-shadow aspect-square object-cover" />
-          <img src="/images/brands/jiekeda/5.jpg" alt="捷客达便利店" class="rounded-xl shadow-md hover:shadow-xl transition-shadow aspect-square object-cover" />
-          <img src="/images/brands/jiekeda/6.jpg" alt="捷客达便利店" class="rounded-xl shadow-md hover:shadow-xl transition-shadow aspect-square object-cover" />
+          <img src="/images/brands/jiekeda/1.jpg" alt="捷客达便利店" class="gallery-item rounded-xl shadow-md hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift" />
+          <img src="/images/brands/jiekeda/2.jpg" alt="捷客达便利店" class="gallery-item rounded-xl shadow-md hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift" />
+          <img src="/images/brands/jiekeda/3.jpg" alt="捷客达便利店" class="gallery-item rounded-xl shadow-md hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift" />
+          <img src="/images/brands/jiekeda/4.jpg" alt="捷客达便利店" class="gallery-item rounded-xl shadow-md hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift" />
+          <img src="/images/brands/jiekeda/5.jpg" alt="捷客达便利店" class="gallery-item rounded-xl shadow-md hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift" />
+          <img src="/images/brands/jiekeda/6.jpg" alt="捷客达便利店" class="gallery-item rounded-xl shadow-md hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift" />
         </div>
       </div>
 
       <!-- 低卡特工 -->
-      <div id="dikategong" class="mb-24">
+      <div id="dikategong" class="mb-24 scroll-reveal">
         <div class="flex items-center justify-between mb-8">
           <div>
             <h2 class="text-3xl font-bold text-gray-900">低卡特工</h2>
@@ -43,17 +51,17 @@ import '../styles/global.css';
         </div>
         
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <img src="/images/brands/dikategong/1.jpg" alt="低卡特工" class="rounded-xl shadow-md hover:shadow-xl transition-shadow aspect-square object-cover" />
-          <img src="/images/brands/dikategong/2.jpg" alt="低卡特工" class="rounded-xl shadow-md hover:shadow-xl transition-shadow aspect-square object-cover" />
-          <img src="/images/brands/dikategong/3.jpg" alt="低卡特工" class="rounded-xl shadow-md hover:shadow-xl transition-shadow aspect-square object-cover" />
-          <img src="/images/brands/dikategong/4.jpg" alt="低卡特工" class="rounded-xl shadow-md hover:shadow-xl transition-shadow aspect-square object-cover" />
-          <img src="/images/brands/dikategong/5.jpg" alt="低卡特工" class="rounded-xl shadow-md hover:shadow-xl transition-shadow aspect-square object-cover" />
-          <img src="/images/brands/dikategong/6.jpg" alt="低卡特工" class="rounded-xl shadow-md hover:shadow-xl transition-shadow aspect-square object-cover" />
+          <img src="/images/brands/dikategong/1.jpg" alt="低卡特工" class="gallery-item rounded-xl shadow-md hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift" />
+          <img src="/images/brands/dikategong/2.jpg" alt="低卡特工" class="gallery-item rounded-xl shadow-md hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift" />
+          <img src="/images/brands/dikategong/3.jpg" alt="低卡特工" class="gallery-item rounded-xl shadow-md hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift" />
+          <img src="/images/brands/dikategong/4.jpg" alt="低卡特工" class="gallery-item rounded-xl shadow-md hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift" />
+          <img src="/images/brands/dikategong/5.jpg" alt="低卡特工" class="gallery-item rounded-xl shadow-md hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift" />
+          <img src="/images/brands/dikategong/6.jpg" alt="低卡特工" class="gallery-item rounded-xl shadow-md hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift" />
         </div>
       </div>
 
       <!-- 一豌面 -->
-      <div id="yiwannmian" class="mb-24">
+      <div id="yiwannmian" class="mb-24 scroll-reveal">
         <div class="flex items-center justify-between mb-8">
           <div>
             <h2 class="text-3xl font-bold text-gray-900">一豌面</h2>
@@ -63,17 +71,17 @@ import '../styles/global.css';
         </div>
         
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <img src="/images/brands/yiwannmian/1.jpg" alt="一豌面" class="rounded-xl shadow-md hover:shadow-xl transition-shadow aspect-square object-cover" />
-          <img src="/images/brands/yiwannmian/2.jpg" alt="一豌面" class="rounded-xl shadow-md hover:shadow-xl transition-shadow aspect-square object-cover" />
-          <img src="/images/brands/yiwannmian/3.jpg" alt="一豌面" class="rounded-xl shadow-md hover:shadow-xl transition-shadow aspect-square object-cover" />
-          <img src="/images/brands/yiwannmian/4.jpg" alt="一豌面" class="rounded-xl shadow-md hover:shadow-xl transition-shadow aspect-square object-cover" />
-          <img src="/images/brands/yiwannmian/5.jpg" alt="一豌面" class="rounded-xl shadow-md hover:shadow-xl transition-shadow aspect-square object-cover" />
-          <img src="/images/brands/yiwannmian/6.jpg" alt="一豌面" class="rounded-xl shadow-md hover:shadow-xl transition-shadow aspect-square object-cover" />
+          <img src="/images/brands/yiwannmian/1.jpg" alt="一豌面" class="gallery-item rounded-xl shadow-md hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift" />
+          <img src="/images/brands/yiwannmian/2.jpg" alt="一豌面" class="gallery-item rounded-xl shadow-md hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift" />
+          <img src="/images/brands/yiwannmian/3.jpg" alt="一豌面" class="gallery-item rounded-xl shadow-md hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift" />
+          <img src="/images/brands/yiwannmian/4.jpg" alt="一豌面" class="gallery-item rounded-xl shadow-md hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift" />
+          <img src="/images/brands/yiwannmian/5.jpg" alt="一豌面" class="gallery-item rounded-xl shadow-md hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift" />
+          <img src="/images/brands/yiwannmian/6.jpg" alt="一豌面" class="gallery-item rounded-xl shadow-md hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift" />
         </div>
       </div>
 
       <!-- 禾本轻甜 -->
-      <div id="hebenqingtian" class="mb-24">
+      <div id="hebenqingtian" class="mb-24 scroll-reveal">
         <div class="flex items-center justify-between mb-8">
           <div>
             <h2 class="text-3xl font-bold text-gray-900">禾本轻甜</h2>
@@ -83,14 +91,94 @@ import '../styles/global.css';
         </div>
         
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <img src="/images/brands/hebenqingtian/1.jpg" alt="禾本轻甜" class="rounded-xl shadow-md hover:shadow-xl transition-shadow aspect-square object-cover" />
-          <img src="/images/brands/hebenqingtian/2.jpg" alt="禾本轻甜" class="rounded-xl shadow-md hover:shadow-xl transition-shadow aspect-square object-cover" />
-          <img src="/images/brands/hebenqingtian/3.jpg" alt="禾本轻甜" class="rounded-xl shadow-md hover:shadow-xl transition-shadow aspect-square object-cover" />
-          <img src="/images/brands/hebenqingtian/4.jpg" alt="禾本轻甜" class="rounded-xl shadow-md hover:shadow-xl transition-shadow aspect-square object-cover" />
-          <img src="/images/brands/hebenqingtian/5.jpg" alt="禾本轻甜" class="rounded-xl shadow-md hover:shadow-xl transition-shadow aspect-square object-cover" />
-          <img src="/images/brands/hebenqingtian/6.jpg" alt="禾本轻甜" class="rounded-xl shadow-md hover:shadow-xl transition-shadow aspect-square object-cover" />
+          <img src="/images/brands/hebenqingtian/1.jpg" alt="禾本轻甜" class="gallery-item rounded-xl shadow-md hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift" />
+          <img src="/images/brands/hebenqingtian/2.jpg" alt="禾本轻甜" class="gallery-item rounded-xl shadow-md hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift" />
+          <img src="/images/brands/hebenqingtian/3.jpg" alt="禾本轻甜" class="gallery-item rounded-xl shadow-md hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift" />
+          <img src="/images/brands/hebenqingtian/4.jpg" alt="禾本轻甜" class="gallery-item rounded-xl shadow-md hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift" />
+          <img src="/images/brands/hebenqingtian/5.jpg" alt="禾本轻甜" class="gallery-item rounded-xl shadow-md hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift" />
+          <img src="/images/brands/hebenqingtian/6.jpg" alt="禾本轻甜" class="gallery-item rounded-xl shadow-md hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift" />
         </div>
       </div>
     </div>
   </section>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="fixed inset-0 bg-black/95 z-50 hidden items-center justify-center p-4" onclick="closeLightbox()">
+    <button class="absolute top-6 right-6 text-white text-4xl hover:text-orange-500 transition-colors" onclick="closeLightbox()">&times;</button>
+    <img id="lightbox-img" src="" alt="Preview" class="max-w-full max-h-[90vh] object-contain rounded-lg" />
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white text-center">
+      <p id="lightbox-caption" class="text-lg font-medium"></p>
+      <p class="text-sm opacity-70 mt-2">点击任意处关闭 · 左右滑动切换</p>
+    </div>
+  </div>
+
+  <!-- Lightbox Script -->
+  <script>
+    const galleryImages = document.querySelectorAll('.gallery-item');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxCaption = document.getElementById('lightbox-caption');
+    let currentIndex = 0;
+    const images = Array.from(galleryImages).map(img => ({
+      src: img.src,
+      alt: img.alt
+    }));
+
+    // 打开灯箱
+    galleryImages.forEach((img, index) => {
+      img.addEventListener('click', () => {
+        currentIndex = index;
+        showLightbox(images[index].src, images[index].alt);
+      });
+    });
+
+    function showLightbox(src, alt) {
+      lightboxImg.src = src;
+      lightboxCaption.textContent = alt;
+      lightbox.classList.remove('hidden');
+      lightbox.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      lightbox.classList.add('hidden');
+      lightbox.classList.remove('flex');
+      document.body.style.overflow = '';
+    }
+
+    // 键盘导航
+    document.addEventListener('keydown', (e) => {
+      if (lightbox.classList.contains('hidden')) return;
+      
+      if (e.key === 'Escape') {
+        closeLightbox();
+      } else if (e.key === 'ArrowLeft') {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        showLightbox(images[currentIndex].src, images[currentIndex].alt);
+      } else if (e.key === 'ArrowRight') {
+        currentIndex = (currentIndex + 1) % images.length;
+        showLightbox(images[currentIndex].src, images[currentIndex].alt);
+      }
+    });
+
+    // 滚动动画
+    function initScrollReveal() {
+      const elements = document.querySelectorAll('.scroll-reveal');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('revealed');
+          }
+        });
+      }, { threshold: 0.1 });
+      
+      elements.forEach(el => observer.observe(el));
+    }
+    
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initScrollReveal);
+    } else {
+      initScrollReveal();
+    }
+  </script>
 </BaseLayout>
