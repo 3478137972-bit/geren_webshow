@@ -4,226 +4,96 @@ import '../styles/global.css';
 ---
 
 <BaseLayout title="作品集">
-  <!-- 滚动进度条 -->
-  <div class="scroll-progress" id="scrollProgress"></div>
-
-  <!-- Header -->
-  <section class="py-32 bg-gradient-to-br from-orange-50 via-amber-50 to-white relative overflow-hidden">
-    <div class="absolute inset-0 opacity-5">
-      <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, #f97316 1px, transparent 0); background-size: 60px 60px;"></div>
-    </div>
-    <div class="absolute top-1/4 -left-32 w-96 h-96 bg-orange-300/20 rounded-full blur-3xl animate-pulse"></div>
-    <div class="absolute bottom-1/4 -right-32 w-96 h-96 bg-amber-300/20 rounded-full blur-3xl animate-pulse" style="animation-delay: 1s;"></div>
-    
-    <div class="max-w-6xl mx-auto px-6 relative z-10">
-      <div class="text-center scroll-reveal">
-        <span class="inline-block bg-white shadow-xl text-orange-600 px-8 py-3 rounded-full text-sm font-bold mb-6 animate-bounce-in">
-          1.5 年设计生涯
-        </span>
-        <h1 class="text-6xl md:text-7xl lg:text-8xl font-black text-gray-900 mb-6 animate-glow">
-          <span class="text-gradient">作品集</span>
-        </h1>
-        <p class="text-xl text-gray-500 mb-10">专注品牌全案设计，用创意点亮商业价值</p>
-        <div class="inline-block bg-gradient-to-r from-orange-500 to-amber-500 text-white px-8 py-4 rounded-full font-bold text-lg shadow-xl animate-pulse">
-          点击任意图片查看大图
-        </div>
-      </div>
+  <!-- Hero Section -->
+  <section class="py-20 bg-gradient-to-br from-orange-50 to-white">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-6">设计作品</h1>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        1.5 年设计生涯，专注品牌全案设计。从品牌定位到视觉落地，为每个品牌打造独特的市场认知。
+      </p>
     </div>
   </section>
 
-  <!-- Gallery Sections -->
+  <!-- Portfolio Grid -->
   <section class="py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-6">
+    <div class="max-w-6xl mx-auto px-6 space-y-24">
+      
       <!-- 捷客达便利店 -->
-      <div id="jiekeda" class="mb-32 scroll-reveal">
-        <div class="flex items-center justify-between mb-12">
-          <div>
-            <h2 class="text-4xl font-black text-gray-900 mb-2">捷客达便利店</h2>
-            <p class="text-gray-500 text-lg">品牌全案设计</p>
-          </div>
-          <span class="bg-gradient-to-r from-orange-500 to-amber-500 text-white px-6 py-3 rounded-full text-sm font-bold shadow-lg">品牌全案</span>
+      <div id="jiekeda" class="scroll-reveal">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl font-bold text-gray-900 mb-4">捷客达便利店</h2>
+          <p class="text-xl text-gray-600">品牌全案设计 | 24H 便捷生活新体验</p>
         </div>
-        
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <img src="/images/brands/jiekeda/0.jpg" alt="捷客达便利店 - 品牌主视觉" class="gallery-item rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift-premium" />
-          <img src="/images/brands/jiekeda/2.jpg" alt="捷客达便利店 - 产品陈列" class="gallery-item rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift-premium" />
-          <img src="/images/brands/jiekeda/3.jpg" alt="捷客达便利店 - 店面设计" class="gallery-item rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift-premium" />
-          <img src="/images/brands/jiekeda/4.jpg" alt="捷客达便利店 - 视觉系统" class="gallery-item rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift-premium" />
-          <img src="/images/brands/jiekeda/5.jpg" alt="捷客达便利店 - 应用设计" class="gallery-item rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift-premium" />
-          <img src="/images/brands/jiekeda/6.jpg" alt="捷客达便利店 - 品牌延伸" class="gallery-item rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift-premium" />
+          <img src="/images/brands/jiekeda/1.jpg" alt="捷客达便利店 - 品牌主视觉" class="gallery-item rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift-premium" />
+          <img src="/images/brands/jiekeda/2.jpg" alt="捷客达便利店 - 产品呈现" class="gallery-item rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift-premium" />
+          <img src="/images/brands/jiekeda/3.jpg" alt="捷客达便利店 - 标志规范" class="gallery-item rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift-premium" />
+          <img src="/images/brands/jiekeda/4.jpg" alt="捷客达便利店 - IP 形象" class="gallery-item rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift-premium" />
+          <img src="/images/brands/jiekeda/5.jpg" alt="捷客达便利店 - 触点设计" class="gallery-item rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift-premium" />
         </div>
       </div>
 
       <!-- 低卡特工 -->
-      <div id="dikategong" class="mb-32 scroll-reveal">
-        <div class="flex items-center justify-between mb-12">
-          <div>
-            <h2 class="text-4xl font-black text-gray-900 mb-2">低卡特工</h2>
-            <p class="text-gray-500 text-lg">中式轻食能量碗品牌设计</p>
-          </div>
-          <span class="bg-gradient-to-r from-green-500 to-emerald-500 text-white px-6 py-3 rounded-full text-sm font-bold shadow-lg">品牌全案</span>
+      <div id="dikategong" class="scroll-reveal">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl font-bold text-gray-900 mb-4">低卡特工</h2>
+          <p class="text-xl text-gray-600">中式轻食能量碗 | 低卡特工到减脂真有效</p>
         </div>
-        
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <img src="/images/brands/dikategong/1.jpg" alt="低卡特工" class="gallery-item rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift-premium" />
-          <img src="/images/brands/dikategong/2.jpg" alt="低卡特工" class="gallery-item rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift-premium" />
-          <img src="/images/brands/dikategong/3.jpg" alt="低卡特工" class="gallery-item rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift-premium" />
-          <img src="/images/brands/dikategong/4.jpg" alt="低卡特工" class="gallery-item rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift-premium" />
-          <img src="/images/brands/dikategong/5.jpg" alt="低卡特工" class="gallery-item rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift-premium" />
-          <img src="/images/brands/dikategong/6.jpg" alt="低卡特工" class="gallery-item rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift-premium" />
+          <img src="/images/brands/dikategong/1.jpg" alt="低卡特工 - 品牌主视觉" class="gallery-item rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift-premium" />
+          <img src="/images/brands/dikategong/2.jpg" alt="低卡特工 - 品牌视觉系统" class="gallery-item rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift-premium" />
+          <img src="/images/brands/dikategong/3.jpg" alt="低卡特工 - 品类定位" class="gallery-item rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift-premium" />
+          <img src="/images/brands/dikategong/4.jpg" alt="低卡特工 - 品牌命名" class="gallery-item rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift-premium" />
+          <img src="/images/brands/dikategong/5.jpg" alt="低卡特工 - 差异化定位" class="gallery-item rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift-premium" />
+          <img src="/images/brands/dikategong/6.jpg" alt="低卡特工 - 秒懂口号" class="gallery-item rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift-premium" />
         </div>
       </div>
 
       <!-- 一豌面 -->
-      <div id="yiwannmian" class="mb-32 scroll-reveal">
-        <div class="flex items-center justify-between mb-12">
-          <div>
-            <h2 class="text-4xl font-black text-gray-900 mb-2">一豌面</h2>
-            <p class="text-gray-500 text-lg">豌豆酸汤牛肉面品牌设计</p>
-          </div>
-          <span class="bg-gradient-to-r from-yellow-500 to-amber-500 text-white px-6 py-3 rounded-full text-sm font-bold shadow-lg">品牌全案</span>
+      <div id="yiwannmian" class="scroll-reveal">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl font-bold text-gray-900 mb-4">一豌面</h2>
+          <p class="text-xl text-gray-600">豌豆酸汤牛肉面开创者 | 酸爽劲道</p>
         </div>
-        
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <img src="/images/brands/yiwannmian/2.jpg" alt="一豌面 - 品牌视觉" class="gallery-item rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift-premium" />
-          <img src="/images/brands/yiwannmian/3.jpg" alt="一豌面 - 包装设计" class="gallery-item rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift-premium" />
-          <img src="/images/brands/yiwannmian/4.jpg" alt="一豌面 - 店面展示" class="gallery-item rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift-premium" />
-          <img src="/images/brands/yiwannmian/5.jpg" alt="一豌面 - 产品摄影" class="gallery-item rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift-premium" />
-          <img src="/images/brands/yiwannmian/6.jpg" alt="一豌面 - 应用设计" class="gallery-item rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift-premium" />
-          <img src="/images/brands/yiwannmian/1.jpg" alt="一豌面 - LOGO 设计" class="gallery-item rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift-premium" />
+          <img src="/images/brands/yiwannmian/1.jpg" alt="一豌面 - 品牌主视觉" class="gallery-item rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift-premium" />
+          <img src="/images/brands/yiwannmian/2.jpg" alt="一豌面 - 标志基础规范" class="gallery-item rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift-premium" />
+          <img src="/images/brands/yiwannmian/3.jpg" alt="一豌面 - 品类命名" class="gallery-item rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift-premium" />
+          <img src="/images/brands/yiwannmian/4.jpg" alt="一豌面 - 品牌命名" class="gallery-item rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift-premium" />
+          <img src="/images/brands/yiwannmian/5.jpg" alt="一豌面 - 差异化定位" class="gallery-item rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift-premium" />
+          <img src="/images/brands/yiwannmian/6.jpg" alt="一豌面 - IP 形象设计" class="gallery-item rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift-premium" />
         </div>
       </div>
 
       <!-- 禾本轻甜 -->
-      <div id="hebenqingtian" class="mb-32 scroll-reveal">
-        <div class="flex items-center justify-between mb-12">
-          <div>
-            <h2 class="text-4xl font-black text-gray-900 mb-2">禾本轻甜</h2>
-            <p class="text-gray-500 text-lg">低糖现烤面包品牌设计</p>
-          </div>
-          <span class="bg-gradient-to-r from-teal-500 to-cyan-500 text-white px-6 py-3 rounded-full text-sm font-bold shadow-lg">品牌全案</span>
+      <div id="hebenqingtian" class="scroll-reveal">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl font-bold text-gray-900 mb-4">禾本轻甜</h2>
+          <p class="text-xl text-gray-600">低糖现烤面包 | 轻甜选禾本现烤味更纯</p>
         </div>
-        
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <img src="/images/brands/hebenqingtian/2.jpg" alt="禾本轻甜 - 品牌视觉" class="gallery-item rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift-premium" />
-          <img src="/images/brands/hebenqingtian/3.jpg" alt="禾本轻甜 - 包装设计" class="gallery-item rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift-premium" />
-          <img src="/images/brands/hebenqingtian/4.jpg" alt="禾本轻甜 - 店面展示" class="gallery-item rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift-premium" />
-          <img src="/images/brands/hebenqingtian/5.jpg" alt="禾本轻甜 - 产品摄影" class="gallery-item rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift-premium" />
-          <img src="/images/brands/hebenqingtian/6.jpg" alt="禾本轻甜 - 应用设计" class="gallery-item rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift-premium" />
-          <img src="/images/brands/hebenqingtian/1.jpg" alt="禾本轻甜 - LOGO 设计" class="gallery-item rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift-premium" />
+          <img src="/images/brands/hebenqingtian/1.jpg" alt="禾本轻甜 - 品牌主视觉" class="gallery-item rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift-premium" />
+          <img src="/images/brands/hebenqingtian/2.jpg" alt="禾本轻甜 - 店面设计" class="gallery-item rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift-premium" />
+          <img src="/images/brands/hebenqingtian/3.jpg" alt="禾本轻甜 - 品牌策划" class="gallery-item rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift-premium" />
+          <img src="/images/brands/hebenqingtian/4.jpg" alt="禾本轻甜 - 竞争格局" class="gallery-item rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift-premium" />
+          <img src="/images/brands/hebenqingtian/5.jpg" alt="禾本轻甜 - 品牌标识" class="gallery-item rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift-premium" />
+          <img src="/images/brands/hebenqingtian/6.jpg" alt="禾本轻甜 - IP 形象设计" class="gallery-item rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 aspect-square object-cover hover-lift-premium" />
         </div>
       </div>
+
     </div>
   </section>
 
-  <!-- Lightbox Modal - 高级版 -->
-  <div id="lightbox" class="fixed inset-0 bg-black/98 z-50 hidden items-center justify-center p-4" onclick="closeLightbox()">
-    <button class="absolute top-8 right-8 text-white text-5xl hover:text-orange-500 transition-all hover:rotate-90" onclick="closeLightbox()">&times;</button>
-    
-    <!-- 图片 -->
-    <img id="lightbox-img" src="" alt="Preview" class="max-w-full max-h-[85vh] object-contain rounded-2xl shadow-2xl" />
-    
-    <!-- 导航按钮 -->
-    <button class="absolute left-8 text-white text-5xl hover:text-orange-500 transition-all hover:scale-110" onclick="prevImage()">‹</button>
-    <button class="absolute right-8 text-white text-5xl hover:text-orange-500 transition-all hover:scale-110" onclick="nextImage()">›</button>
-    
-    <!-- 底部信息 -->
-    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white text-center">
-      <p id="lightbox-caption" class="text-2xl font-bold mb-2"></p>
-      <p class="text-sm opacity-60">ESC 关闭 · 切换</p>
+  <!-- CTA Section -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold text-gray-900 mb-6">有设计需求？</h2>
+      <p class="text-xl text-gray-600 mb-8">
+        从品牌策略到视觉落地，一站式解决你的品牌设计问题
+      </p>
+      <a href="/contact" class="btn-premium inline-block bg-white text-orange-500 px-12 py-6 rounded-2xl font-bold text-xl shadow-2xl hover:shadow-3xl scroll-reveal">
+        立即联系
+      </a>
     </div>
-    
-    <!-- 图片计数器 -->
-    <div class="absolute top-8 left-8 text-white text-lg font-mono" id="lightbox-counter"></div>
-  </div>
-
-  <!-- Scripts -->
-  <script>
-    const galleryImages = document.querySelectorAll('.gallery-item');
-    const lightbox = document.getElementById('lightbox');
-    const lightboxImg = document.getElementById('lightbox-img');
-    const lightboxCaption = document.getElementById('lightbox-caption');
-    const lightboxCounter = document.getElementById('lightbox-counter');
-    let currentIndex = 0;
-    const images = Array.from(galleryImages).map(img => ({
-      src: img.src,
-      alt: img.alt
-    }));
-
-    // 打开灯箱
-    galleryImages.forEach((img, index) => {
-      img.addEventListener('click', () => {
-        currentIndex = index;
-        showLightbox(images[index].src, images[index].alt);
-      });
-    });
-
-    function showLightbox(src, alt) {
-      lightboxImg.src = src;
-      lightboxCaption.textContent = alt;
-      lightboxCounter.textContent = `${currentIndex + 1} / ${images.length}`;
-      lightbox.classList.remove('hidden');
-      lightbox.classList.add('flex');
-      document.body.style.overflow = 'hidden';
-    }
-
-    function closeLightbox() {
-      lightbox.classList.add('hidden');
-      lightbox.classList.remove('flex');
-      document.body.style.overflow = '';
-    }
-
-    function prevImage() {
-      currentIndex = (currentIndex - 1 + images.length) % images.length;
-      showLightbox(images[currentIndex].src, images[currentIndex].alt);
-    }
-
-    function nextImage() {
-      currentIndex = (currentIndex + 1) % images.length;
-      showLightbox(images[currentIndex].src, images[currentIndex].alt);
-    }
-
-    // 键盘导航
-    document.addEventListener('keydown', (e) => {
-      if (lightbox.classList.contains('hidden')) return;
-      
-      if (e.key === 'Escape') {
-        closeLightbox();
-      } else if (e.key === 'ArrowLeft') {
-        prevImage();
-      } else if (e.key === 'ArrowRight') {
-        nextImage();
-      }
-    });
-
-    // 滚动进度条
-    function updateScrollProgress() {
-      const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-      const scrolled = (winScroll / height) * 100;
-      document.getElementById('scrollProgress').style.width = scrolled + '%';
-    }
-    
-    window.addEventListener('scroll', updateScrollProgress);
-
-    // 滚动动画
-    function initScrollReveal() {
-      const elements = document.querySelectorAll('.scroll-reveal');
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('revealed');
-          }
-        });
-      }, { threshold: 0.1 });
-      
-      elements.forEach(el => observer.observe(el));
-    }
-    
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', initScrollReveal);
-    } else {
-      initScrollReveal();
-    }
-  </script>
+  </section>
 </BaseLayout>
