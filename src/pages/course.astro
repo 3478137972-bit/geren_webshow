@@ -7,67 +7,74 @@ import '../styles/global.css';
   <!-- Hero Section -->
   <section class="py-20 bg-gradient-to-br from-orange-50 to-white">
     <div class="max-w-[1600px] mx-auto px-8">
-      <div class="grid md:grid-cols-2 gap-12 items-start">
-        <!-- 左边：标题 + 组件 -->
-        <div id="course-content" class="space-y-8 pt-8">
-          <div class="text-left">
-            <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-4">AI 实战营</h1>
-            <p class="text-xl text-gray-600">从 0 到 1 搭建你的 AI 商业系统</p>
-            <div class="inline-block bg-orange-500 text-white px-6 py-3 rounded-full font-medium mt-4">
-              我们只解决 4 个死穴
+      <!-- 左右布局容器 -->
+      <div class="border-2 border-orange-200 rounded-3xl overflow-hidden bg-white shadow-xl">
+        <div class="grid md:grid-cols-2">
+          <!-- 左边：标题 + 组件 -->
+          <div id="course-content" class="p-8 md:p-12">
+            <div class="mb-8">
+              <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-3">AI 实战营</h1>
+              <p class="text-lg text-gray-600 mb-4">从 0 到 1 搭建你的 AI 商业系统</p>
+              <div class="inline-block bg-orange-500 text-white px-5 py-2 rounded-full text-sm font-medium">
+                我们只解决 4 个死穴
+              </div>
+            </div>
+            
+            <!-- UI 组件展示卡片 - 2x2 网格 -->
+            <div class="grid grid-cols-2 gap-4">
+              <!-- 获客系统 -->
+              <div class="bg-orange-50 border-2 border-orange-100 rounded-xl p-5 hover:border-orange-400 transition-colors">
+                <div class="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center mb-3">
+                  <svg class="w-5 h-5 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                  </svg>
+                </div>
+                <div class="text-sm font-semibold text-gray-900">获客系统</div>
+              </div>
+              
+              <!-- 内容系统 -->
+              <div class="bg-orange-50 border-2 border-orange-100 rounded-xl p-5 hover:border-orange-400 transition-colors">
+                <div class="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center mb-3">
+                  <svg class="w-5 h-5 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                  </svg>
+                </div>
+                <div class="text-sm font-semibold text-gray-900">内容系统</div>
+              </div>
+              
+              <!-- 成交系统 -->
+              <div class="bg-orange-50 border-2 border-orange-100 rounded-xl p-5 hover:border-orange-400 transition-colors">
+                <div class="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center mb-3">
+                  <svg class="w-5 h-5 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                </div>
+                <div class="text-sm font-semibold text-gray-900">成交系统</div>
+              </div>
+              
+              <!-- 交付系统 -->
+              <div class="bg-orange-50 border-2 border-orange-100 rounded-xl p-5 hover:border-orange-400 transition-colors">
+                <div class="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center mb-3">
+                  <svg class="w-5 h-5 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                  </svg>
+                </div>
+                <div class="text-sm font-semibold text-gray-900">交付系统</div>
+              </div>
             </div>
           </div>
           
-          <!-- UI 组件展示卡片 -->
-          <div class="grid grid-cols-2 gap-6">
-            <div class="bg-white border-2 border-orange-200 rounded-xl p-6 hover:border-orange-500 transition-colors">
-              <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
-                <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
-                </svg>
-              </div>
-              <div class="text-base font-semibold text-gray-900">获客系统</div>
-            </div>
-            <div class="bg-white border-2 border-orange-200 rounded-xl p-6 hover:border-orange-500 transition-colors">
-              <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
-                <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                </svg>
-              </div>
-              <div class="text-base font-semibold text-gray-900">内容系统</div>
-            </div>
-            <div class="bg-white border-2 border-orange-200 rounded-xl p-6 hover:border-orange-500 transition-colors">
-              <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
-                <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
-              </div>
-              <div class="text-base font-semibold text-gray-900">成交系统</div>
-            </div>
-            <div class="bg-white border-2 border-orange-200 rounded-xl p-6 hover:border-orange-500 transition-colors">
-              <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
-                <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                </svg>
-              </div>
-              <div class="text-base font-semibold text-gray-900">交付系统</div>
-            </div>
-          </div>
-        </div>
-        
-        <!-- 右边：课程图片（点击放大） -->
-        <div class="flex justify-center">
-          <div id="poster-container" class="relative cursor-pointer group" onclick="openLightbox()">
-            <div class="absolute inset-0 bg-gradient-to-br from-orange-400/30 to-amber-400/30 rounded-3xl blur-2xl group-hover:blur-3xl transition-all"></div>
+          <!-- 右边：课程图片（点击放大） -->
+          <div id="poster-container" class="relative cursor-pointer group bg-orange-100" onclick="openLightbox()">
             <img 
-              id="course-poster"
               src="/images/course/course-poster.jpg" 
               alt="AI 实战营课程海报 - 点击放大"
-              class="relative w-full object-cover rounded-3xl shadow-2xl group-hover:shadow-3xl transition-all"
+              class="absolute inset-0 w-full h-full object-cover"
             />
-            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-              <div class="bg-white/90 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg">
-                <span class="text-gray-700 font-medium">🔍 点击放大</span>
+            <!-- 悬停提示 -->
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all flex items-center justify-center opacity-0 group-hover:opacity-100">
+              <div class="bg-white/95 backdrop-blur-sm px-6 py-3 rounded-full shadow-2xl transform translate-y-4 group-hover:translate-y-0 transition-transform">
+                <span class="text-gray-800 font-semibold text-lg">🔍 点击查看大图</span>
               </div>
             </div>
           </div>
@@ -89,19 +96,8 @@ import '../styles/global.css';
     </div>
   </div>
 
-  <!-- 脚本：动态高度匹配 + 灯箱功能 -->
+  <!-- 脚本：灯箱功能 -->
   <script>
-    // 动态匹配海报高度与左侧内容高度
-    function matchPosterHeight() {
-      const content = document.getElementById('course-content');
-      const posterContainer = document.getElementById('poster-container');
-      
-      if (content && posterContainer) {
-        const contentHeight = content.offsetHeight;
-        posterContainer.style.height = contentHeight + 'px';
-      }
-    }
-
     // 灯箱功能
     function openLightbox() {
       const lightbox = document.getElementById('lightbox');
@@ -125,18 +121,6 @@ import '../styles/global.css';
         closeLightbox();
       }
     });
-
-    // 初始化
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', () => {
-        matchPosterHeight();
-      });
-    } else {
-      matchPosterHeight();
-    }
-
-    // 窗口大小改变时重新计算
-    window.addEventListener('resize', matchPosterHeight);
   </script>
 
   <!-- Course Modules -->
