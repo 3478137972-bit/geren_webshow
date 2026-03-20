@@ -6,19 +6,56 @@ import '../styles/global.css';
 <BaseLayout title="课程">
   <!-- Hero Section -->
   <section class="py-20 bg-gradient-to-br from-orange-50 to-white">
-    <div class="max-w-4xl mx-auto px-6 text-center">
-      <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-4">AI 实战营</h1>
-      <p class="text-xl text-gray-600 mb-8">我们只解决 4 个死穴</p>
-      <div class="inline-block bg-orange-500 text-white px-6 py-3 rounded-full font-medium">
-        从 0 到 1 搭建你的 AI 商业系统
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <!-- 左边：UI 组件展示 -->
+        <div class="space-y-6">
+          <h1 class="text-5xl md:text-6xl font-bold text-gray-900">AI 实战营</h1>
+          <p class="text-xl text-gray-600">从 0 到 1 搭建你的 AI 商业系统</p>
+          <div class="inline-block bg-orange-500 text-white px-6 py-3 rounded-full font-medium">
+            我们只解决 4 个死穴
+          </div>
+          
+          <!-- UI 组件展示卡片 -->
+          <div class="grid grid-cols-2 gap-4 mt-8">
+            <div class="bg-white border-2 border-orange-200 rounded-xl p-4">
+              <div class="text-orange-500 text-3xl mb-2">📊</div>
+              <div class="text-sm font-semibold text-gray-900">获客系统</div>
+            </div>
+            <div class="bg-white border-2 border-orange-200 rounded-xl p-4">
+              <div class="text-orange-500 text-3xl mb-2">📝</div>
+              <div class="text-sm font-semibold text-gray-900">内容系统</div>
+            </div>
+            <div class="bg-white border-2 border-orange-200 rounded-xl p-4">
+              <div class="text-orange-500 text-3xl mb-2">💰</div>
+              <div class="text-sm font-semibold text-gray-900">成交系统</div>
+            </div>
+            <div class="bg-white border-2 border-orange-200 rounded-xl p-4">
+              <div class="text-orange-500 text-3xl mb-2">🚀</div>
+              <div class="text-sm font-semibold text-gray-900">交付系统</div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 右边：课程图片 -->
+        <div class="flex justify-center">
+          <div class="relative">
+            <div class="absolute inset-0 bg-gradient-to-br from-orange-400/30 to-amber-400/30 rounded-3xl blur-2xl"></div>
+            <img 
+              src="/images/course/course-cover.jpg" 
+              alt="AI 实战营课程"
+              class="relative w-full max-w-md aspect-[4/3] object-cover rounded-3xl shadow-2xl"
+            />
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Course Modules -->
   <section class="py-20 bg-white">
-    <div class="max-w-4xl mx-auto px-6">
-      <div class="space-y-8">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-8">
         <!-- Module 1 -->
         <div class="bg-gradient-to-r from-orange-50 to-white border-2 border-orange-200 rounded-2xl p-8 hover:border-orange-500 transition-colors">
           <div class="flex items-start gap-6">
@@ -32,15 +69,15 @@ import '../styles/global.css';
               </p>
               <ul class="space-y-2 text-gray-600">
                 <li class="flex items-center">
-                  <span class="text-orange-500 mr-2">✓</span>
+                  <span class="text-orange-500 mr-2 font-bold">✓</span>
                   自动引流系统搭建
                 </li>
                 <li class="flex items-center">
-                  <span class="text-orange-500 mr-2">✓</span>
+                  <span class="text-orange-500 mr-2 font-bold">✓</span>
                   精准客户定位
                 </li>
                 <li class="flex items-center">
-                  <span class="text-orange-500 mr-2">✓</span>
+                  <span class="text-orange-500 mr-2 font-bold">✓</span>
                   流量转化漏斗设计
                 </li>
               </ul>
@@ -61,15 +98,15 @@ import '../styles/global.css';
               </p>
               <ul class="space-y-2 text-gray-600">
                 <li class="flex items-center">
-                  <span class="text-orange-500 mr-2">✓</span>
+                  <span class="text-orange-500 mr-2 font-bold">✓</span>
                   AI 文案批量生成
                 </li>
                 <li class="flex items-center">
-                  <span class="text-orange-500 mr-2">✓</span>
+                  <span class="text-orange-500 mr-2 font-bold">✓</span>
                   AI 图片批量制作
                 </li>
                 <li class="flex items-center">
-                  <span class="text-orange-500 mr-2">✓</span>
+                  <span class="text-orange-500 mr-2 font-bold">✓</span>
                   AI 视频快速产出
                 </li>
               </ul>
@@ -90,15 +127,15 @@ import '../styles/global.css';
               </p>
               <ul class="space-y-2 text-gray-600">
                 <li class="flex items-center">
-                  <span class="text-orange-500 mr-2">✓</span>
+                  <span class="text-orange-500 mr-2 font-bold">✓</span>
                   智能话术库搭建
                 </li>
                 <li class="flex items-center">
-                  <span class="text-orange-500 mr-2">✓</span>
+                  <span class="text-orange-500 mr-2 font-bold">✓</span>
                   自动化跟进流程
                 </li>
                 <li class="flex items-center">
-                  <span class="text-orange-500 mr-2">✓</span>
+                  <span class="text-orange-500 mr-2 font-bold">✓</span>
                   转化闭环设计
                 </li>
               </ul>
@@ -119,15 +156,15 @@ import '../styles/global.css';
               </p>
               <ul class="space-y-2 text-gray-600">
                 <li class="flex items-center">
-                  <span class="text-orange-500 mr-2">✓</span>
+                  <span class="text-orange-500 mr-2 font-bold">✓</span>
                   标准化 SOP 设计
                 </li>
                 <li class="flex items-center">
-                  <span class="text-orange-500 mr-2">✓</span>
+                  <span class="text-orange-500 mr-2 font-bold">✓</span>
                   工具链整合
                 </li>
                 <li class="flex items-center">
-                  <span class="text-orange-500 mr-2">✓</span>
+                  <span class="text-orange-500 mr-2 font-bold">✓</span>
                   服务规模化
                 </li>
               </ul>
@@ -151,15 +188,15 @@ import '../styles/global.css';
             </p>
             <div class="space-y-3">
               <div class="flex items-center gap-3 text-gray-700">
-                <span class="text-orange-500">✓</span>
+                <span class="text-orange-500 font-bold">✓</span>
                 <span>一对一咨询</span>
               </div>
               <div class="flex items-center gap-3 text-gray-700">
-                <span class="text-orange-500">✓</span>
+                <span class="text-orange-500 font-bold">✓</span>
                 <span>课程大纲详解</span>
               </div>
               <div class="flex items-center gap-3 text-gray-700">
-                <span class="text-orange-500">✓</span>
+                <span class="text-orange-500 font-bold">✓</span>
                 <span>限时优惠价格</span>
               </div>
             </div>
