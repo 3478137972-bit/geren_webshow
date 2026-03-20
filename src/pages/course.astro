@@ -9,7 +9,7 @@ import '../styles/global.css';
     <div class="max-w-[1600px] mx-auto px-8">
       <div class="grid md:grid-cols-2 gap-12 items-start">
         <!-- 左边：标题 + 组件 -->
-        <div class="space-y-8 pt-8">
+        <div id="course-content" class="space-y-8 pt-8">
           <div class="text-left">
             <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-4">AI 实战营</h1>
             <p class="text-xl text-gray-600">从 0 到 1 搭建你的 AI 商业系统</p>
@@ -55,20 +55,89 @@ import '../styles/global.css';
           </div>
         </div>
         
-        <!-- 右边：课程图片 -->
+        <!-- 右边：课程图片（点击放大） -->
         <div class="flex justify-center">
-          <div class="relative">
-            <div class="absolute inset-0 bg-gradient-to-br from-orange-400/30 to-amber-400/30 rounded-3xl blur-2xl"></div>
+          <div id="poster-container" class="relative cursor-pointer group" onclick="openLightbox()">
+            <div class="absolute inset-0 bg-gradient-to-br from-orange-400/30 to-amber-400/30 rounded-3xl blur-2xl group-hover:blur-3xl transition-all"></div>
             <img 
+              id="course-poster"
               src="/images/course/course-poster.jpg" 
-              alt="AI 实战营课程海报"
-              class="relative w-full max-w-lg object-cover rounded-3xl shadow-2xl"
+              alt="AI 实战营课程海报 - 点击放大"
+              class="relative w-full object-cover rounded-3xl shadow-2xl group-hover:shadow-3xl transition-all"
             />
+            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+              <div class="bg-white/90 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg">
+                <span class="text-gray-700 font-medium">🔍 点击放大</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- 图片放大灯箱 -->
+  <div id="lightbox" class="fixed inset-0 bg-black/90 z-50 hidden" onclick="closeLightbox()">
+    <div class="absolute top-4 right-4 text-white text-4xl cursor-pointer hover:text-gray-300" onclick="closeLightbox()">×</div>
+    <div class="flex items-center justify-center h-full p-8">
+      <img 
+        src="/images/course/course-poster.jpg" 
+        alt="AI 实战营课程海报"
+        class="max-h-full max-w-full object-contain"
+        onclick="event.stopPropagation()"
+      />
+    </div>
+  </div>
+
+  <!-- 脚本：动态高度匹配 + 灯箱功能 -->
+  <script>
+    // 动态匹配海报高度与左侧内容高度
+    function matchPosterHeight() {
+      const content = document.getElementById('course-content');
+      const posterContainer = document.getElementById('poster-container');
+      
+      if (content && posterContainer) {
+        const contentHeight = content.offsetHeight;
+        posterContainer.style.height = contentHeight + 'px';
+      }
+    }
+
+    // 灯箱功能
+    function openLightbox() {
+      const lightbox = document.getElementById('lightbox');
+      if (lightbox) {
+        lightbox.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+      }
+    }
+
+    function closeLightbox() {
+      const lightbox = document.getElementById('lightbox');
+      if (lightbox) {
+        lightbox.classList.add('hidden');
+        document.body.style.overflow = '';
+      }
+    }
+
+    // ESC 键关闭灯箱
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeLightbox();
+      }
+    });
+
+    // 初始化
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', () => {
+        matchPosterHeight();
+      });
+    } else {
+      matchPosterHeight();
+    }
+
+    // 窗口大小改变时重新计算
+    window.addEventListener('resize', matchPosterHeight);
+  </script>
 
   <!-- Course Modules -->
   <section class="py-20 bg-white">
