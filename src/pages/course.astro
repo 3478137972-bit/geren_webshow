@@ -3,375 +3,293 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import '../styles/global.css';
 ---
 
-<BaseLayout title="AI 实战营 - 课程">
+<BaseLayout title="2026 暑期 AI 实战营 - 课程">
   <!-- 1. Hero 区域 -->
-  <section class="py-16 md:py-24 bg-gradient-to-br from-orange-50 via-white to-amber-50">
-    <div class="max-w-[1400px] mx-auto px-6 md:px-8">
-      <div class="grid lg:grid-cols-2 gap-12 items-center">
-        <!-- 左侧：课程内容 -->
-        <div class="space-y-6">
-          <!-- 标签 -->
-          <div class="inline-flex items-center gap-2 bg-orange-100 text-orange-700 px-4 py-2 rounded-full text-sm font-semibold">
-            <span class="w-2 h-2 bg-orange-500 rounded-full animate-pulse"></span>
-            🔥 限时 5 折优惠
-          </div>
-          
-          <!-- 主标题 -->
-          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-            AI 编程实战训练营
-          </h1>
-          
-          <!-- 副标题 -->
-          <p class="text-xl md:text-2xl text-gray-600 leading-relaxed">
-            21 天掌握 AI 辅助开发，效率提升 10 倍
-          </p>
-          
-          <!-- 评分 -->
-          <div class="flex items-center gap-3">
-            <div class="flex items-center text-yellow-400 text-2xl">
-              <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
-            </div>
-            <span class="text-lg font-semibold text-gray-900">4.9</span>
-            <span class="text-gray-500">(23,458 名学员)</span>
-          </div>
-          
-          <!-- 核心卖点 -->
-          <div class="flex flex-wrap gap-3">
-            <div class="flex items-center gap-2 bg-green-50 text-green-700 px-4 py-2 rounded-lg">
-              <span>✅</span>
-              <span class="font-medium">零基础友好</span>
-            </div>
-            <div class="flex items-center gap-2 bg-blue-50 text-blue-700 px-4 py-2 rounded-lg">
-              <span>✅</span>
-              <span class="font-medium">实战项目</span>
-            </div>
-            <div class="flex items-center gap-2 bg-purple-50 text-purple-700 px-4 py-2 rounded-lg">
-              <span>✅</span>
-              <span class="font-medium">终身答疑</span>
-            </div>
-          </div>
-          
-          <!-- CTA 按钮 -->
-          <div class="flex flex-col sm:flex-row gap-4 pt-4">
-            <a href="#price" class="inline-flex items-center justify-center bg-orange-500 hover:bg-orange-600 text-white text-xl font-bold px-10 py-4 rounded-2xl shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
-              立即报名 ¥999
-              <span class="ml-2 text-orange-200 line-through text-base font-normal">原价¥1999</span>
-            </a>
-            <a href="#syllabus" class="inline-flex items-center justify-center bg-white hover:bg-gray-50 text-gray-700 text-lg font-semibold px-8 py-4 rounded-2xl border-2 border-gray-200 transition-all">
-              📋 查看课程大纲
-            </a>
-          </div>
-          
-          <!-- 信任背书 -->
-          <div class="flex items-center gap-6 pt-4 text-sm text-gray-500">
-            <div class="flex items-center gap-2">
-              <span>👥</span>
-              <span>23,458+ 学员</span>
-            </div>
-            <div class="flex items-center gap-2">
-              <span>📚</span>
-              <span>100+ 课时</span>
-            </div>
-            <div class="flex items-center gap-2">
-              <span>🎓</span>
-              <span>结业证书</span>
-            </div>
-            <div class="flex items-center gap-2">
-              <span>💰</span>
-              <span>7 天退款</span>
-            </div>
-          </div>
+  <section class="py-20 bg-gradient-to-br from-orange-500 via-orange-400 to-amber-400">
+    <div class="max-w-[1200px] mx-auto px-6 md:px-8 text-center">
+      <!-- 主标题 -->
+      <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 drop-shadow-lg">
+        2026 暑期 AI 实战营
+      </h1>
+      
+      <!-- 副标题 -->
+      <p class="text-2xl md:text-3xl text-orange-100 mb-8">
+        21 天掌握 AI 辅助开发，效率提升 10 倍
+      </p>
+      
+      <!-- 课程特色 -->
+      <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-12">
+        <div class="bg-white/20 backdrop-blur-sm rounded-2xl p-6">
+          <div class="text-4xl mb-3">🎯</div>
+          <h3 class="text-xl font-bold text-white mb-2">实战导向</h3>
+          <p class="text-orange-100">4 个实战项目，学完即用</p>
         </div>
-        
-        <!-- 右侧：讲师信息 + 二维码 -->
-        <div class="flex flex-col items-center lg:items-end space-y-6">
-          <!-- 讲师卡片 -->
-          <div class="bg-white rounded-3xl shadow-2xl p-8 border-2 border-orange-100 max-w-md w-full">
-            <div class="flex items-center gap-6 mb-6">
-              <img 
-                src="/images/lele-profile.jpg" 
-                alt="讲师照片"
-                class="w-24 h-24 rounded-full object-cover border-4 border-orange-200 shadow-lg"
-              />
-              <div>
-                <h3 class="text-2xl font-bold text-gray-900">乐乐</h3>
-                <p class="text-orange-500 font-medium">AI 训练师</p>
-                <div class="flex flex-wrap gap-2 mt-2">
-                  <span class="text-xs bg-orange-50 text-orange-700 px-3 py-1 rounded-full">5 年 AI 实战</span>
-                  <span class="text-xs bg-blue-50 text-blue-700 px-3 py-1 rounded-full">10+ 品牌案例</span>
+        <div class="bg-white/20 backdrop-blur-sm rounded-2xl p-6">
+          <div class="text-4xl mb-3">👨🏫</div>
+          <h3 class="text-xl font-bold text-white mb-2">名师指导</h3>
+          <p class="text-orange-100">5 年 AI 实战专家亲授</p>
+        </div>
+        <div class="bg-white/20 backdrop-blur-sm rounded-2xl p-6">
+          <div class="text-4xl mb-3">📜</div>
+          <h3 class="text-xl font-bold text-white mb-2">结业证书</h3>
+          <p class="text-orange-100">完成项目获得认证证书</p>
+        </div>
+      </div>
+      
+      <!-- CTA 按钮 -->
+      <a href="#price" class="inline-flex items-center justify-center bg-white hover:bg-orange-50 text-orange-600 text-2xl font-bold px-16 py-6 rounded-2xl shadow-2xl hover:shadow-3xl transition-all transform hover:scale-105">
+        立即报名
+      </a>
+      <p class="text-orange-100 mt-4 text-lg">早鸟价 ¥12,800 · 原价 ¥26,800</p>
+    </div>
+  </section>
+
+  <!-- 2. 讲师介绍 -->
+  <section class="py-16 md:py-20 bg-white">
+    <div class="max-w-[1200px] mx-auto px-6 md:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">主讲导师</h2>
+      </div>
+      
+      <div class="max-w-4xl mx-auto">
+        <div class="bg-gradient-to-br from-orange-50 to-amber-50 rounded-3xl p-8 md:p-12 border-2 border-orange-200">
+          <div class="flex flex-col md:flex-row items-center gap-8">
+            <!-- 讲师照片 -->
+            <img 
+              src="/images/lele-profile.jpg" 
+              alt="乐乐"
+              class="w-40 h-40 rounded-2xl object-cover border-4 border-orange-300 shadow-xl"
+            />
+            
+            <!-- 讲师信息 -->
+            <div class="flex-1 text-center md:text-left">
+              <h3 class="text-3xl font-bold text-gray-900 mb-2">乐乐</h3>
+              <p class="text-orange-500 font-semibold text-lg mb-4">AI 训练师</p>
+              
+              <!-- 资历标签 -->
+              <div class="flex flex-wrap justify-center md:justify-start gap-3 mb-6">
+                <span class="bg-orange-100 text-orange-700 px-4 py-2 rounded-full font-medium">5 年 AI 实战经验</span>
+                <span class="bg-blue-100 text-blue-700 px-4 py-2 rounded-full font-medium">10+ 品牌案例</span>
+                <span class="bg-green-100 text-green-700 px-4 py-2 rounded-full font-medium">50+ 企业客户</span>
+              </div>
+              
+              <!-- 资历详情 -->
+              <div class="space-y-3 text-gray-700">
+                <div class="flex items-start gap-3">
+                  <span class="text-orange-500 text-xl">🏆</span>
+                  <span>前大厂 AI 产品负责人，主导多个 AI 项目落地</span>
+                </div>
+                <div class="flex items-start gap-3">
+                  <span class="text-orange-500 text-xl">📖</span>
+                  <span>AI 破局俱乐部核心讲师，累计授课 1000+ 小时</span>
+                </div>
+                <div class="flex items-start gap-3">
+                  <span class="text-orange-500 text-xl">💼</span>
+                  <span>服务 50+ 企业客户，包括多家世界 500 强</span>
                 </div>
               </div>
             </div>
-            
-            <!-- 讲师资历 -->
-            <div class="space-y-3">
-              <div class="flex items-start gap-3">
-                <span class="text-orange-500 text-lg">🏆</span>
-                <span class="text-gray-700">前大厂 AI 产品负责人</span>
-              </div>
-              <div class="flex items-start gap-3">
-                <span class="text-orange-500 text-lg">📖</span>
-                <span class="text-gray-700">AI 破局俱乐部核心讲师</span>
-              </div>
-              <div class="flex items-start gap-3">
-                <span class="text-orange-500 text-lg">💼</span>
-                <span class="text-gray-700">服务 50+ 企业客户</span>
-              </div>
-            </div>
-          </div>
-          
-          <!-- 微信二维码 -->
-          <div class="bg-white rounded-2xl shadow-xl p-6 border-2 border-orange-100 text-center">
-            <img 
-              src="/images/qrcode/wechat.jpg" 
-              alt="微信二维码"
-              class="w-32 h-32 mx-auto rounded-lg border-2 border-gray-100"
-            />
-            <p class="text-sm text-gray-600 mt-3 font-medium">扫码咨询课程详情</p>
-            <p class="text-xs text-gray-400 mt-1">获取优惠 + 课程大纲</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 2. 课程亮点 -->
-  <section class="py-16 md:py-24 bg-white">
-    <div class="max-w-[1400px] mx-auto px-6 md:px-8">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">课程亮点 / 你将获得</h2>
-        <p class="text-xl text-gray-600">4 大核心系统，解决 AI 商业落地关键问题</p>
-      </div>
-      
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <!-- 获客系统 -->
-        <div class="group bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl p-8 border-2 border-orange-100 hover:border-orange-400 transition-all hover:shadow-xl hover:-translate-y-1">
-          <div class="w-16 h-16 bg-orange-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
-            </svg>
-          </div>
-          <h3 class="text-xl font-bold text-gray-900 mb-3">AI 获客系统</h3>
-          <p class="text-gray-600 mb-4">从 0 到 1 搭建自动引流系统，让精准客户主动找上门</p>
-          <ul class="space-y-2 text-sm text-gray-600">
-            <li class="flex items-center gap-2"><span class="text-green-500">✓</span>自动引流系统搭建</li>
-            <li class="flex items-center gap-2"><span class="text-green-500">✓</span>精准客户定位</li>
-            <li class="flex items-center gap-2"><span class="text-green-500">✓</span>流量转化漏斗设计</li>
-          </ul>
-        </div>
-        
-        <!-- 内容系统 -->
-        <div class="group bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 border-2 border-blue-100 hover:border-blue-400 transition-all hover:shadow-xl hover:-translate-y-1">
-          <div class="w-16 h-16 bg-blue-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-            </svg>
-          </div>
-          <h3 class="text-xl font-bold text-gray-900 mb-3">AI 内容系统</h3>
-          <p class="text-gray-600 mb-4">一键量产，一人顶一个内容团队（文案/图片/视频）</p>
-          <ul class="space-y-2 text-sm text-gray-600">
-            <li class="flex items-center gap-2"><span class="text-green-500">✓</span>AI 文案批量生成</li>
-            <li class="flex items-center gap-2"><span class="text-green-500">✓</span>AI 图片批量制作</li>
-            <li class="flex items-center gap-2"><span class="text-green-500">✓</span>AI 视频快速产出</li>
-          </ul>
-        </div>
-        
-        <!-- 成交系统 -->
-        <div class="group bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8 border-2 border-green-100 hover:border-green-400 transition-all hover:shadow-xl hover:-translate-y-1">
-          <div class="w-16 h-16 bg-green-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-            </svg>
-          </div>
-          <h3 class="text-xl font-bold text-gray-900 mb-3">AI 成交系统</h3>
-          <p class="text-gray-600 mb-4">智能话术 + 自动化跟进，把咨询变成订单的转化闭环</p>
-          <ul class="space-y-2 text-sm text-gray-600">
-            <li class="flex items-center gap-2"><span class="text-green-500">✓</span>智能话术库搭建</li>
-            <li class="flex items-center gap-2"><span class="text-green-500">✓</span>自动化跟进流程</li>
-            <li class="flex items-center gap-2"><span class="text-green-500">✓</span>转化闭环设计</li>
-          </ul>
-        </div>
-        
-        <!-- 交付系统 -->
-        <div class="group bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-8 border-2 border-purple-100 hover:border-purple-400 transition-all hover:shadow-xl hover:-translate-y-1">
-          <div class="w-16 h-16 bg-purple-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-            </svg>
-          </div>
-          <h3 class="text-xl font-bold text-gray-900 mb-3">AI 交付系统</h3>
-          <p class="text-gray-600 mb-4">标准化 SOP+ 工具链，让服务可复制、利润可放大</p>
-          <ul class="space-y-2 text-sm text-gray-600">
-            <li class="flex items-center gap-2"><span class="text-green-500">✓</span>标准化 SOP 设计</li>
-            <li class="flex items-center gap-2"><span class="text-green-500">✓</span>工具链整合</li>
-            <li class="flex items-center gap-2"><span class="text-green-500">✓</span>服务规模化</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 3. 课程大纲 -->
-  <section id="syllabus" class="py-16 md:py-24 bg-gray-50">
-    <div class="max-w-[1400px] mx-auto px-6 md:px-8">
+  <!-- 3. 课程大纲（21 天日程） -->
+  <section id="syllabus" class="py-16 md:py-20 bg-gray-50">
+    <div class="max-w-[1200px] mx-auto px-6 md:px-8">
       <div class="text-center mb-12">
         <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">课程大纲</h2>
-        <p class="text-xl text-gray-600">4 大模块，21 天系统学习</p>
+        <p class="text-xl text-gray-600">21 天系统学习，从入门到实战</p>
       </div>
       
-      <div class="max-w-4xl mx-auto space-y-4">
-        <!-- 模块 1 -->
-        <div class="bg-white rounded-2xl border-2 border-gray-200 overflow-hidden">
-          <button class="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-gray-50 transition-colors" onclick="toggleModule('module1')">
-            <div class="flex items-center gap-4">
-              <span class="w-12 h-12 bg-orange-500 text-white rounded-xl flex items-center justify-center font-bold text-lg">1</span>
-              <div>
-                <h3 class="text-xl font-bold text-gray-900">AI 获客系统实战</h3>
-                <p class="text-gray-500 text-sm">5 课时 · 约 3 小时</p>
+      <div class="space-y-6">
+        <!-- 第 1 阶段：AI 获客系统 -->
+        <div class="bg-white rounded-2xl border-2 border-orange-200 overflow-hidden">
+          <div class="bg-gradient-to-r from-orange-500 to-amber-500 px-8 py-4">
+            <h3 class="text-2xl font-bold text-white">第 1 阶段：AI 获客系统（第 1-5 天）</h3>
+          </div>
+          <div class="p-8">
+            <div class="space-y-4">
+              <div class="flex gap-4">
+                <span class="w-20 flex-shrink-0 text-orange-500 font-bold">第 1 天</span>
+                <div class="flex-1">
+                  <div class="font-semibold text-gray-900 mb-1">客户定位：找到你的高价值人群</div>
+                  <div class="text-gray-600 text-sm">学习使用 AI 分析目标客户画像，确定市场定位</div>
+                </div>
               </div>
-            </div>
-            <span class="text-orange-500 text-2xl transform transition-transform" id="module1-icon">▼</span>
-          </button>
-          <div id="module1" class="hidden px-8 pb-6">
-            <div class="ml-16 space-y-3">
-              <div class="flex items-start gap-3">
-                <span class="text-gray-400 text-sm mt-1">01</span>
-                <span class="text-gray-700">客户定位：找到你的高价值人群</span>
-                <span class="ml-auto text-xs bg-green-100 text-green-700 px-2 py-1 rounded">免费试听</span>
+              <div class="flex gap-4">
+                <span class="w-20 flex-shrink-0 text-orange-500 font-bold">第 2 天</span>
+                <div class="flex-1">
+                  <div class="font-semibold text-gray-900 mb-1">引流系统设计：让客户主动找你</div>
+                  <div class="text-gray-600 text-sm">搭建自动引流漏斗，实现精准获客</div>
+                </div>
               </div>
-              <div class="flex items-start gap-3">
-                <span class="text-gray-400 text-sm mt-1">02</span>
-                <span class="text-gray-700">引流系统设计：让客户主动找你</span>
+              <div class="flex gap-4">
+                <span class="w-20 flex-shrink-0 text-orange-500 font-bold">第 3 天</span>
+                <div class="flex-1">
+                  <div class="font-semibold text-gray-900 mb-1">流量转化漏斗：从访客到付费用户</div>
+                  <div class="text-gray-600 text-sm">设计转化路径，提升转化率</div>
+                </div>
               </div>
-              <div class="flex items-start gap-3">
-                <span class="text-gray-400 text-sm mt-1">03</span>
-                <span class="text-gray-700">流量转化漏斗：从访客到付费用户</span>
+              <div class="flex gap-4">
+                <span class="w-20 flex-shrink-0 text-orange-500 font-bold">第 4 天</span>
+                <div class="flex-1">
+                  <div class="font-semibold text-gray-900 mb-1">实战案例：从 0 到 1000 粉丝</div>
+                  <div class="text-gray-600 text-sm">真实案例拆解，学习成功经验</div>
+                </div>
               </div>
-              <div class="flex items-start gap-3">
-                <span class="text-gray-400 text-sm mt-1">04</span>
-                <span class="text-gray-700">实战案例：从 0 到 1000 粉丝</span>
-              </div>
-              <div class="flex items-start gap-3">
-                <span class="text-gray-400 text-sm mt-1">05</span>
-                <span class="text-gray-700">作业：设计你的获客系统</span>
+              <div class="flex gap-4">
+                <span class="w-20 flex-shrink-0 text-orange-500 font-bold">第 5 天</span>
+                <div class="flex-1">
+                  <div class="font-semibold text-gray-900 mb-1">作业：设计你的获客系统</div>
+                  <div class="text-gray-600 text-sm">完成个人获客系统设计方案</div>
+                </div>
               </div>
             </div>
           </div>
         </div>
         
-        <!-- 模块 2 -->
-        <div class="bg-white rounded-2xl border-2 border-gray-200 overflow-hidden">
-          <button class="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-gray-50 transition-colors" onclick="toggleModule('module2')">
-            <div class="flex items-center gap-4">
-              <span class="w-12 h-12 bg-blue-500 text-white rounded-xl flex items-center justify-center font-bold text-lg">2</span>
-              <div>
-                <h3 class="text-xl font-bold text-gray-900">AI 内容系统实战</h3>
-                <p class="text-gray-500 text-sm">6 课时 · 约 4 小时</p>
+        <!-- 第 2 阶段：AI 内容系统 -->
+        <div class="bg-white rounded-2xl border-2 border-blue-200 overflow-hidden">
+          <div class="bg-gradient-to-r from-blue-500 to-indigo-500 px-8 py-4">
+            <h3 class="text-2xl font-bold text-white">第 2 阶段：AI 内容系统（第 6-11 天）</h3>
+          </div>
+          <div class="p-8">
+            <div class="space-y-4">
+              <div class="flex gap-4">
+                <span class="w-20 flex-shrink-0 text-blue-500 font-bold">第 6 天</span>
+                <div class="flex-1">
+                  <div class="font-semibold text-gray-900 mb-1">AI 文案：批量生成高质量内容</div>
+                  <div class="text-gray-600 text-sm">掌握 AI 文案工具，提升内容产出效率</div>
+                </div>
               </div>
-            </div>
-            <span class="text-orange-500 text-2xl transform transition-transform" id="module2-icon">▼</span>
-          </button>
-          <div id="module2" class="hidden px-8 pb-6">
-            <div class="ml-16 space-y-3">
-              <div class="flex items-start gap-3">
-                <span class="text-gray-400 text-sm mt-1">01</span>
-                <span class="text-gray-700">AI 文案：批量生成高质量内容</span>
+              <div class="flex gap-4">
+                <span class="w-20 flex-shrink-0 text-blue-500 font-bold">第 7 天</span>
+                <div class="flex-1">
+                  <div class="font-semibold text-gray-900 mb-1">AI 图片：快速制作视觉素材</div>
+                  <div class="text-gray-600 text-sm">使用 AI 生成专业级图片</div>
+                </div>
               </div>
-              <div class="flex items-start gap-3">
-                <span class="text-gray-400 text-sm mt-1">02</span>
-                <span class="text-gray-700">AI 图片：快速制作视觉素材</span>
+              <div class="flex gap-4">
+                <span class="w-20 flex-shrink-0 text-blue-500 font-bold">第 8 天</span>
+                <div class="flex-1">
+                  <div class="font-semibold text-gray-900 mb-1">AI 视频：一人顶一个团队</div>
+                  <div class="text-gray-600 text-sm">AI 视频生成与编辑技巧</div>
+                </div>
               </div>
-              <div class="flex items-start gap-3">
-                <span class="text-gray-400 text-sm mt-1">03</span>
-                <span class="text-gray-700">AI 视频：一人顶一个团队</span>
+              <div class="flex gap-4">
+                <span class="w-20 flex-shrink-0 text-blue-500 font-bold">第 9 天</span>
+                <div class="flex-1">
+                  <div class="font-semibold text-gray-900 mb-1">内容日历：30 天内容规划</div>
+                  <div class="text-gray-600 text-sm">制定系统化内容发布计划</div>
+                </div>
               </div>
-              <div class="flex items-start gap-3">
-                <span class="text-gray-400 text-sm mt-1">04</span>
-                <span class="text-gray-700">内容日历：30 天内容规划</span>
+              <div class="flex gap-4">
+                <span class="w-20 flex-shrink-0 text-blue-500 font-bold">第 10 天</span>
+                <div class="flex-1">
+                  <div class="font-semibold text-gray-900 mb-1">多平台分发策略</div>
+                  <div class="text-gray-600 text-sm">全平台内容分发与运营</div>
+                </div>
               </div>
-              <div class="flex items-start gap-3">
-                <span class="text-gray-400 text-sm mt-1">05</span>
-                <span class="text-gray-700">多平台分发策略</span>
-              </div>
-              <div class="flex items-start gap-3">
-                <span class="text-gray-400 text-sm mt-1">06</span>
-                <span class="text-gray-700">作业：制作你的内容矩阵</span>
+              <div class="flex gap-4">
+                <span class="w-20 flex-shrink-0 text-blue-500 font-bold">第 11 天</span>
+                <div class="flex-1">
+                  <div class="font-semibold text-gray-900 mb-1">作业：制作你的内容矩阵</div>
+                  <div class="text-gray-600 text-sm">完成个人内容矩阵搭建</div>
+                </div>
               </div>
             </div>
           </div>
         </div>
         
-        <!-- 模块 3 -->
-        <div class="bg-white rounded-2xl border-2 border-gray-200 overflow-hidden">
-          <button class="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-gray-50 transition-colors" onclick="toggleModule('module3')">
-            <div class="flex items-center gap-4">
-              <span class="w-12 h-12 bg-green-500 text-white rounded-xl flex items-center justify-center font-bold text-lg">3</span>
-              <div>
-                <h3 class="text-xl font-bold text-gray-900">AI 成交系统实战</h3>
-                <p class="text-gray-500 text-sm">5 课时 · 约 3 小时</p>
+        <!-- 第 3 阶段：AI 成交系统 -->
+        <div class="bg-white rounded-2xl border-2 border-green-200 overflow-hidden">
+          <div class="bg-gradient-to-r from-green-500 to-emerald-500 px-8 py-4">
+            <h3 class="text-2xl font-bold text-white">第 3 阶段：AI 成交系统（第 12-16 天）</h3>
+          </div>
+          <div class="p-8">
+            <div class="space-y-4">
+              <div class="flex gap-4">
+                <span class="w-20 flex-shrink-0 text-green-500 font-bold">第 12 天</span>
+                <div class="flex-1">
+                  <div class="font-semibold text-gray-900 mb-1">智能话术库：应对各种客户问题</div>
+                  <div class="text-gray-600 text-sm">搭建 AI 话术库，提升响应效率</div>
+                </div>
               </div>
-            </div>
-            <span class="text-orange-500 text-2xl transform transition-transform" id="module3-icon">▼</span>
-          </button>
-          <div id="module3" class="hidden px-8 pb-6">
-            <div class="ml-16 space-y-3">
-              <div class="flex items-start gap-3">
-                <span class="text-gray-400 text-sm mt-1">01</span>
-                <span class="text-gray-700">智能话术库：应对各种客户问题</span>
+              <div class="flex gap-4">
+                <span class="w-20 flex-shrink-0 text-green-500 font-bold">第 13 天</span>
+                <div class="flex-1">
+                  <div class="font-semibold text-gray-900 mb-1">自动化跟进：7 天转化流程</div>
+                  <div class="text-gray-600 text-sm">设计自动化客户跟进系统</div>
+                </div>
               </div>
-              <div class="flex items-start gap-3">
-                <span class="text-gray-400 text-sm mt-1">02</span>
-                <span class="text-gray-700">自动化跟进：7 天转化流程</span>
+              <div class="flex gap-4">
+                <span class="w-20 flex-shrink-0 text-green-500 font-bold">第 14 天</span>
+                <div class="flex-1">
+                  <div class="font-semibold text-gray-900 mb-1">价格策略：如何定价利润最大化</div>
+                  <div class="text-gray-600 text-sm">学习科学定价方法</div>
+                </div>
               </div>
-              <div class="flex items-start gap-3">
-                <span class="text-gray-400 text-sm mt-1">03</span>
-                <span class="text-gray-700">价格策略：如何定价利润最大化</span>
+              <div class="flex gap-4">
+                <span class="w-20 flex-shrink-0 text-green-500 font-bold">第 15 天</span>
+                <div class="flex-1">
+                  <div class="font-semibold text-gray-900 mb-1">成交案例：从咨询到订单</div>
+                  <div class="text-gray-600 text-sm">真实成交案例拆解</div>
+                </div>
               </div>
-              <div class="flex items-start gap-3">
-                <span class="text-gray-400 text-sm mt-1">04</span>
-                <span class="text-gray-700">成交案例：从咨询到订单</span>
-              </div>
-              <div class="flex items-start gap-3">
-                <span class="text-gray-400 text-sm mt-1">05</span>
-                <span class="text-gray-700">作业：设计你的成交流程</span>
+              <div class="flex gap-4">
+                <span class="w-20 flex-shrink-0 text-green-500 font-bold">第 16 天</span>
+                <div class="flex-1">
+                  <div class="font-semibold text-gray-900 mb-1">作业：设计你的成交流程</div>
+                  <div class="text-gray-600 text-sm">完成个人成交系统设计</div>
+                </div>
               </div>
             </div>
           </div>
         </div>
         
-        <!-- 模块 4 -->
-        <div class="bg-white rounded-2xl border-2 border-gray-200 overflow-hidden">
-          <button class="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-gray-50 transition-colors" onclick="toggleModule('module4')">
-            <div class="flex items-center gap-4">
-              <span class="w-12 h-12 bg-purple-500 text-white rounded-xl flex items-center justify-center font-bold text-lg">4</span>
-              <div>
-                <h3 class="text-xl font-bold text-gray-900">AI 交付系统实战</h3>
-                <p class="text-gray-500 text-sm">5 课时 · 约 3 小时</p>
+        <!-- 第 4 阶段：AI 交付系统 -->
+        <div class="bg-white rounded-2xl border-2 border-purple-200 overflow-hidden">
+          <div class="bg-gradient-to-r from-purple-500 to-pink-500 px-8 py-4">
+            <h3 class="text-2xl font-bold text-white">第 4 阶段：AI 交付系统（第 17-21 天）</h3>
+          </div>
+          <div class="p-8">
+            <div class="space-y-4">
+              <div class="flex gap-4">
+                <span class="w-20 flex-shrink-0 text-purple-500 font-bold">第 17 天</span>
+                <div class="flex-1">
+                  <div class="font-semibold text-gray-900 mb-1">标准化 SOP：让服务可复制</div>
+                  <div class="text-gray-600 text-sm">设计标准化服务流程</div>
+                </div>
               </div>
-            </div>
-            <span class="text-orange-500 text-2xl transform transition-transform" id="module4-icon">▼</span>
-          </button>
-          <div id="module4" class="hidden px-8 pb-6">
-            <div class="ml-16 space-y-3">
-              <div class="flex items-start gap-3">
-                <span class="text-gray-400 text-sm mt-1">01</span>
-                <span class="text-gray-700">标准化 SOP：让服务可复制</span>
+              <div class="flex gap-4">
+                <span class="w-20 flex-shrink-0 text-purple-500 font-bold">第 18 天</span>
+                <div class="flex-1">
+                  <div class="font-semibold text-gray-900 mb-1">工具链整合：提升交付效率</div>
+                  <div class="text-gray-600 text-sm">整合 AI 工具提升效率</div>
+                </div>
               </div>
-              <div class="flex items-start gap-3">
-                <span class="text-gray-400 text-sm mt-1">02</span>
-                <span class="text-gray-700">工具链整合：提升交付效率</span>
+              <div class="flex gap-4">
+                <span class="w-20 flex-shrink-0 text-purple-500 font-bold">第 19 天</span>
+                <div class="flex-1">
+                  <div class="font-semibold text-gray-900 mb-1">客户管理：从单次到长期</div>
+                  <div class="text-gray-600 text-sm">建立长期客户关系</div>
+                </div>
               </div>
-              <div class="flex items-start gap-3">
-                <span class="text-gray-400 text-sm mt-1">03</span>
-                <span class="text-gray-700">客户管理：从单次到长期</span>
+              <div class="flex gap-4">
+                <span class="w-20 flex-shrink-0 text-purple-500 font-bold">第 20 天</span>
+                <div class="flex-1">
+                  <div class="font-semibold text-gray-900 mb-1">规模化：从 1 到 100 客户</div>
+                  <div class="text-gray-600 text-sm">学习规模化交付方法</div>
+                </div>
               </div>
-              <div class="flex items-start gap-3">
-                <span class="text-gray-400 text-sm mt-1">04</span>
-                <span class="text-gray-700">规模化：从 1 到 100 客户</span>
-              </div>
-              <div class="flex items-start gap-3">
-                <span class="text-gray-400 text-sm mt-1">05</span>
-                <span class="text-gray-700">作业：搭建你的交付系统</span>
+              <div class="flex gap-4">
+                <span class="w-20 flex-shrink-0 text-purple-500 font-bold">第 21 天</span>
+                <div class="flex-1">
+                  <div class="font-semibold text-gray-900 mb-1">毕业项目：搭建你的交付系统</div>
+                  <div class="text-gray-600 text-sm">完成最终实战项目</div>
+                </div>
               </div>
             </div>
           </div>
@@ -380,130 +298,79 @@ import '../styles/global.css';
     </div>
   </section>
 
-  <!-- 4. 学员评价 -->
-  <section class="py-16 md:py-24 bg-white">
-    <div class="max-w-[1400px] mx-auto px-6 md:px-8">
+  <!-- 4. 价格信息 -->
+  <section id="price" class="py-16 md:py-20 bg-gradient-to-br from-orange-500 via-orange-400 to-amber-400">
+    <div class="max-w-[1200px] mx-auto px-6 md:px-8">
       <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">学员评价</h2>
-        <p class="text-xl text-gray-600">听听他们怎么说</p>
+        <h2 class="text-3xl md:text-5xl font-bold text-white mb-4">限时优惠</h2>
+        <p class="text-xl text-orange-100">早鸟价仅剩最后名额</p>
       </div>
       
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- 评价 1 -->
-        <div class="bg-gray-50 rounded-2xl p-8 border-2 border-gray-100">
-          <div class="flex items-center gap-1 text-yellow-400 text-lg mb-4">
-            <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
-          </div>
-          <p class="text-gray-700 mb-6 leading-relaxed">
-            "课程非常实战，学完第一周就用 AI 获客系统引流了 50+ 精准客户，已经成交 3 单，学费早就赚回来了！"
-          </p>
-          <div class="flex items-center gap-4">
-            <div class="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center text-white font-bold">张</div>
-            <div>
-              <div class="font-semibold text-gray-900">张先生</div>
-              <div class="text-sm text-gray-500">创业者 · 第 3 期学员</div>
-            </div>
-          </div>
-        </div>
-        
-        <!-- 评价 2 -->
-        <div class="bg-gray-50 rounded-2xl p-8 border-2 border-gray-100">
-          <div class="flex items-center gap-1 text-yellow-400 text-lg mb-4">
-            <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
-          </div>
-          <p class="text-gray-700 mb-6 leading-relaxed">
-            "AI 内容系统太高效了！以前一周写 5 篇文章，现在一天能出 10 篇，质量还更好。团队效率直接翻倍！"
-          </p>
-          <div class="flex items-center gap-4">
-            <div class="w-12 h-12 bg-gradient-to-br from-pink-400 to-pink-600 rounded-full flex items-center justify-center text-white font-bold">李</div>
-            <div>
-              <div class="font-semibold text-gray-900">李女士</div>
-              <div class="text-sm text-gray-500">内容运营 · 第 5 期学员</div>
-            </div>
-          </div>
-        </div>
-        
-        <!-- 评价 3 -->
-        <div class="bg-gray-50 rounded-2xl p-8 border-2 border-gray-100">
-          <div class="flex items-center gap-1 text-yellow-400 text-lg mb-4">
-            <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
-          </div>
-          <p class="text-gray-700 mb-6 leading-relaxed">
-            "成交系统的话术库太实用了，客户常见问题都有标准答案，转化率从 10% 提升到了 35%！"
-          </p>
-          <div class="flex items-center gap-4">
-            <div class="w-12 h-12 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center text-white font-bold">王</div>
-            <div>
-              <div class="font-semibold text-gray-900">王先生</div>
-              <div class="text-sm text-gray-500">销售总监 · 第 7 期学员</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 5. 价格信息 -->
-  <section id="price" class="py-16 md:py-24 bg-gradient-to-br from-orange-50 via-amber-50 to-yellow-50">
-    <div class="max-w-[1400px] mx-auto px-6 md:px-8">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">限时优惠</h2>
-        <p class="text-xl text-gray-600">现在报名，立省¥1000</p>
-      </div>
-      
-      <div class="max-w-2xl mx-auto">
-        <div class="bg-white rounded-3xl shadow-2xl overflow-hidden border-4 border-orange-200">
-          <!-- 头部 -->
-          <div class="bg-gradient-to-r from-orange-500 to-amber-500 py-6 text-center">
-            <div class="inline-block bg-white/20 backdrop-blur-sm text-white px-6 py-2 rounded-full text-sm font-semibold mb-2">
-              🔥 限时特惠 · 仅剩 48 小时
+      <div class="max-w-3xl mx-auto">
+        <div class="bg-white rounded-3xl shadow-2xl overflow-hidden">
+          <!-- 价格阶梯 -->
+          <div class="bg-gradient-to-r from-orange-500 to-amber-500 px-8 py-6 text-center">
+            <div class="inline-block bg-white/20 backdrop-blur-sm text-white px-6 py-2 rounded-full text-sm font-semibold">
+              🔥 早鸟优惠 · 限时抢购
             </div>
           </div>
           
-          <!-- 价格 -->
-          <div class="p-8 text-center">
-            <div class="flex items-center justify-center gap-4 mb-4">
-              <span class="text-3xl text-gray-400 line-through">¥1999</span>
-              <span class="text-6xl font-bold text-orange-500">¥999</span>
+          <!-- 价格展示 -->
+          <div class="p-8 md:p-12">
+            <!-- 价格对比 -->
+            <div class="flex items-center justify-center gap-6 mb-8">
+              <div class="text-center">
+                <div class="text-4xl text-gray-400 line-through font-bold">¥26,800</div>
+                <div class="text-gray-500 text-sm mt-1">原价</div>
+              </div>
+              <div class="text-3xl text-orange-500 font-bold">→</div>
+              <div class="text-center">
+                <div class="text-6xl text-orange-500 font-bold">¥12,800</div>
+                <div class="text-orange-600 text-sm mt-1 font-semibold">早鸟价</div>
+              </div>
             </div>
-            <p class="text-gray-600 mb-8">立省 ¥1000 · 5 折优惠</p>
+            
+            <!-- 立省金额 -->
+            <div class="bg-red-50 rounded-xl p-4 mb-8 text-center">
+              <div class="text-red-600 font-bold text-lg"> 立省 ¥14,000 · 52% OFF</div>
+            </div>
             
             <!-- 课程包含 -->
-            <div class="space-y-3 text-left max-w-md mx-auto mb-8">
-              <div class="flex items-center gap-3">
-                <span class="w-6 h-6 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-sm">✓</span>
-                <span class="text-gray-700">21 天系统课程（100+ 课时）</span>
+            <div class="space-y-4 mb-8">
+              <div class="flex items-center gap-4">
+                <span class="w-8 h-8 bg-green-100 text-green-600 rounded-full flex items-center justify-center font-bold">✓</span>
+                <span class="text-gray-700 text-lg">21 天系统课程（100+ 课时）</span>
               </div>
-              <div class="flex items-center gap-3">
-                <span class="w-6 h-6 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-sm">✓</span>
-                <span class="text-gray-700">4 大实战项目 + 作业批改</span>
+              <div class="flex items-center gap-4">
+                <span class="w-8 h-8 bg-green-100 text-green-600 rounded-full flex items-center justify-center font-bold">✓</span>
+                <span class="text-gray-700 text-lg">4 大实战项目 + 作业批改</span>
               </div>
-              <div class="flex items-center gap-3">
-                <span class="w-6 h-6 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-sm">✓</span>
-                <span class="text-gray-700">终身社群答疑 + 资源对接</span>
+              <div class="flex items-center gap-4">
+                <span class="w-8 h-8 bg-green-100 text-green-600 rounded-full flex items-center justify-center font-bold">✓</span>
+                <span class="text-gray-700 text-lg">终身社群答疑 + 资源对接</span>
               </div>
-              <div class="flex items-center gap-3">
-                <span class="w-6 h-6 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-sm">✓</span>
-                <span class="text-gray-700">结业证书 + 优秀学员推荐</span>
+              <div class="flex items-center gap-4">
+                <span class="w-8 h-8 bg-green-100 text-green-600 rounded-full flex items-center justify-center font-bold">✓</span>
+                <span class="text-gray-700 text-lg">结业证书 + 优秀学员推荐</span>
               </div>
-              <div class="flex items-center gap-3">
-                <span class="w-6 h-6 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-sm">✓</span>
-                <span class="text-gray-700">7 天无理由退款保障</span>
+              <div class="flex items-center gap-4">
+                <span class="w-8 h-8 bg-green-100 text-green-600 rounded-full flex items-center justify-center font-bold">✓</span>
+                <span class="text-gray-700 text-lg">7 天无理由退款保障</span>
               </div>
             </div>
             
             <!-- CTA 按钮 -->
-            <a href="https://u.wechat.com/xxx" class="inline-flex items-center justify-center bg-orange-500 hover:bg-orange-600 text-white text-2xl font-bold px-12 py-5 rounded-2xl shadow-lg hover:shadow-xl transition-all transform hover:scale-105 w-full max-w-sm">
-              立即报名
+            <a href="https://u.wechat.com/xxx" class="block w-full bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white text-2xl font-bold px-12 py-6 rounded-2xl shadow-lg hover:shadow-xl transition-all transform hover:scale-105 text-center">
+              立即报名 · 抢占早鸟名额
             </a>
             
             <!-- 微信二维码 -->
-            <div class="mt-8 pt-8 border-t-2 border-gray-100">
+            <div class="mt-8 pt-8 border-t-2 border-gray-100 text-center">
               <p class="text-gray-600 mb-4 font-medium">或扫码咨询课程详情</p>
               <img 
                 src="/images/qrcode/wechat.jpg" 
                 alt="微信二维码"
-                class="w-32 h-32 mx-auto rounded-lg border-2 border-gray-200"
+                class="w-40 h-40 mx-auto rounded-lg border-2 border-gray-200"
               />
             </div>
           </div>
@@ -512,148 +379,26 @@ import '../styles/global.css';
     </div>
   </section>
 
-  <!-- 6. FAQ 常见问题 -->
-  <section class="py-16 md:py-24 bg-white">
-    <div class="max-w-[1400px] mx-auto px-6 md:px-8">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">常见问题</h2>
-        <p class="text-xl text-gray-600">你可能想知道的</p>
-      </div>
-      
-      <div class="max-w-3xl mx-auto space-y-4">
-        <!-- FAQ 1 -->
-        <div class="bg-gray-50 rounded-2xl border-2 border-gray-200 overflow-hidden">
-          <button class="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-gray-100 transition-colors" onclick="toggleFaq('faq1')">
-            <span class="text-lg font-semibold text-gray-900">课程适合零基础学员吗？</span>
-            <span class="text-orange-500 text-2xl transform transition-transform" id="faq1-icon">▼</span>
-          </button>
-          <div id="faq1" class="hidden px-8 pb-6">
-            <p class="text-gray-700 leading-relaxed">
-              完全适合！课程从基础概念讲起，每个模块都有详细操作步骤和实战案例。我们有超过 40% 的学员是零基础开始，现在都已经能够熟练使用 AI 工具完成商业项目。
-            </p>
-          </div>
-        </div>
-        
-        <!-- FAQ 2 -->
-        <div class="bg-gray-50 rounded-2xl border-2 border-gray-200 overflow-hidden">
-          <button class="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-gray-100 transition-colors" onclick="toggleFaq('faq2')">
-            <span class="text-lg font-semibold text-gray-900">课程学习周期是多久？</span>
-            <span class="text-orange-500 text-2xl transform transition-transform" id="faq2-icon">▼</span>
-          </button>
-          <div id="faq2" class="hidden px-8 pb-6">
-            <p class="text-gray-700 leading-relaxed">
-              课程建议学习周期为 21 天，每天 1-2 小时。但课程是录播形式，可以永久回看，你可以根据自己的节奏灵活安排。大部分学员在 2-4 周内完成学习。
-            </p>
-          </div>
-        </div>
-        
-        <!-- FAQ 3 -->
-        <div class="bg-gray-50 rounded-2xl border-2 border-gray-200 overflow-hidden">
-          <button class="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-gray-100 transition-colors" onclick="toggleFaq('faq3')">
-            <span class="text-lg font-semibold text-gray-900">学完后有什么支持？</span>
-            <span class="text-orange-500 text-2xl transform transition-transform" id="faq3-icon">▼</span>
-          </button>
-          <div id="faq3" class="hidden px-8 pb-6">
-            <p class="text-gray-700 leading-relaxed">
-              报名即加入终身学员社群，享受：① 讲师终身答疑 ② 每周直播加餐 ③ 学员资源对接 ④ 优秀项目推荐 ⑤ 持续更新的内容。一次报名，终身受益。
-            </p>
-          </div>
-        </div>
-        
-        <!-- FAQ 4 -->
-        <div class="bg-gray-50 rounded-2xl border-2 border-gray-200 overflow-hidden">
-          <button class="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-gray-100 transition-colors" onclick="toggleFaq('faq4')">
-            <span class="text-lg font-semibold text-gray-900">不满意可以退款吗？</span>
-            <span class="text-orange-500 text-2xl transform transition-transform" id="faq4-icon">▼</span>
-          </button>
-          <div id="faq4" class="hidden px-8 pb-6">
-            <p class="text-gray-700 leading-relaxed">
-              可以的！我们提供 7 天无理由退款保障。只要你在 7 天内完成任意一个模块的作业并提交，如果觉得课程不适合你，联系客服即可全额退款，无需任何理由。
-            </p>
-          </div>
-        </div>
-        
-        <!-- FAQ 5 -->
-        <div class="bg-gray-50 rounded-2xl border-2 border-gray-200 overflow-hidden">
-          <button class="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-gray-100 transition-colors" onclick="toggleFaq('faq5')">
-            <span class="text-lg font-semibold text-gray-900">课程提供发票吗？</span>
-            <span class="text-orange-500 text-2xl transform transition-transform" id="faq5-icon">▼</span>
-          </button>
-          <div id="faq5" class="hidden px-8 pb-6">
-            <p class="text-gray-700 leading-relaxed">
-              提供正规电子发票。报名后联系客服，提供开票信息（个人/公司），我们会在 3 个工作日内开具电子发票并发送到你邮箱。
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 7. 底部 CTA -->
-  <section class="py-16 md:py-24 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
-    <div class="max-w-[1400px] mx-auto px-6 md:px-8 text-center">
+  <!-- 5. 底部 CTA -->
+  <section class="py-16 md:py-20 bg-gray-900">
+    <div class="max-w-[1200px] mx-auto px-6 md:px-8 text-center">
       <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">
         立即加入，开启 AI 商业之旅
       </h2>
       <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-        23,458+ 学员的选择，7 天无理由退款，零风险尝试
+        21 天系统学习，4 大实战项目，终身社群支持
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
         <a href="#price" class="inline-flex items-center justify-center bg-orange-500 hover:bg-orange-600 text-white text-xl font-bold px-12 py-5 rounded-2xl shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
-          立即报名 ¥999
+          立即报名 ¥12,800
         </a>
         <a href="https://u.wechat.com/xxx" class="inline-flex items-center justify-center bg-white/10 hover:bg-white/20 text-white text-lg font-semibold px-8 py-5 rounded-2xl backdrop-blur-sm transition-all">
           💬 扫码咨询
         </a>
       </div>
       <p class="text-gray-400 mt-8 text-sm">
-        🔥 限时优惠仅剩 48 小时 · 错过恢复原价¥1999
+        🔥 早鸟价仅剩最后名额 · 错过恢复原价¥26,800
       </p>
     </div>
   </section>
-
-  <!-- 脚本：手风琴交互 -->
-  <script>
-    function toggleModule(moduleId) {
-      const module = document.getElementById(moduleId);
-      const icon = document.getElementById(moduleId + '-icon');
-      if (module && icon) {
-        const isHidden = module.classList.contains('hidden');
-        // 关闭所有模块
-        document.querySelectorAll('[id^="module"]').forEach(el => {
-          if (el.id.endsWith('-icon')) {
-            el.style.transform = 'rotate(0deg)';
-          } else {
-            el.classList.add('hidden');
-          }
-        });
-        // 打开当前模块
-        if (isHidden) {
-          module.classList.remove('hidden');
-          icon.style.transform = 'rotate(180deg)';
-        }
-      }
-    }
-
-    function toggleFaq(faqId) {
-      const faq = document.getElementById(faqId);
-      const icon = document.getElementById(faqId + '-icon');
-      if (faq && icon) {
-        const isHidden = faq.classList.contains('hidden');
-        // 关闭所有 FAQ
-        document.querySelectorAll('[id^="faq"]').forEach(el => {
-          if (el.id.endsWith('-icon')) {
-            el.style.transform = 'rotate(0deg)';
-          } else {
-            el.classList.add('hidden');
-          }
-        });
-        // 打开当前 FAQ
-        if (isHidden) {
-          faq.classList.remove('hidden');
-          icon.style.transform = 'rotate(180deg)';
-        }
-      }
-    }
-  </script>
 </BaseLayout>
